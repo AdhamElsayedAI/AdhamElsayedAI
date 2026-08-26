@@ -1,136 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="620" viewBox="0 0 1500 620" role="img" aria-labelledby="title desc">
-  <title id="title">Adham Elsayed — AI Engineer</title>
-  <desc id="desc">A six-layer perspective tunnel converges on Adham Elsayed's AI engineering identity.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f4f7f9"/>
-      <stop offset="0.55" stop-color="#f0f3f5"/>
-      <stop offset="1" stop-color="#e9eef2"/>
-    </linearGradient>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f0f3f6" stop-opacity="0.99"/>
-      <stop offset="0.58" stop-color="#e9eef2" stop-opacity="0.99"/>
-      <stop offset="1" stop-color="#e3e9ee" stop-opacity="0.98"/>
-    </linearGradient>
-    <linearGradient id="ceilingFalloff" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#cbd6df" stop-opacity="0.34"/>
-      <stop offset="0.7" stop-color="#e9eef2" stop-opacity="0.08"/>
-      <stop offset="1" stop-color="#f4f7f9" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="floorFalloff" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#cbd6df" stop-opacity="0.34"/>
-      <stop offset="0.72" stop-color="#edf1f4" stop-opacity="0.1"/>
-      <stop offset="1" stop-color="#f4f7f9" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="cyanLine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#7f9caf" stop-opacity="0.08"/>
-      <stop offset="0.5" stop-color="#6ea8d9" stop-opacity="0.72"/>
-      <stop offset="1" stop-color="#9a91c7" stop-opacity="0.08"/>
-    </linearGradient>
-    <radialGradient id="core" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#9bc7e3" stop-opacity="0.2"/>
-      <stop offset="0.35" stop-color="#6ea8d9" stop-opacity="0.1"/>
-      <stop offset="1" stop-color="#6ea8d9" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
-      <path d="M38 0H0V38" fill="none" stroke="#cbd6df" stroke-opacity="0.06" stroke-width="1"/>
-    </pattern>
-    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="8"/>
-    </filter>
-    <filter id="panelShadow" x="-20%" y="-35%" width="140%" height="180%">
-      <feDropShadow dx="0" dy="18" stdDeviation="17" flood-color="#7f9caf" flood-opacity="0.34"/>
-      <feDropShadow dx="0" dy="-2" stdDeviation="4" flood-color="#5f8fb8" flood-opacity="0.16"/>
-    </filter>
-    <clipPath id="screenClip">
-      <path d="M398 187H1102L1130 215V405L1102 433H398L370 405V215Z"/>
-    </clipPath>
-  </defs>
-
-  <rect width="1500" height="620" rx="28" fill="url(#bg)"/>
-  <rect width="1500" height="620" rx="28" fill="url(#grid)"/>
-
-  <g fill="none">
-    <path d="M28 28H1472V592H28Z" stroke="#9aacb9" stroke-opacity="0.65" stroke-width="2"/>
-    <path d="M88 58H1412V562H88Z" stroke="#6ea8d9" stroke-opacity="0.32" stroke-width="2"/>
-    <path d="M158 92H1342V528H158Z" stroke="#9aacb9" stroke-opacity="0.45" stroke-width="2"/>
-    <path d="M232 126H1268V494H232Z" stroke="#9a91c7" stroke-opacity="0.32" stroke-width="2"/>
-    <path d="M304 156H1196V464H304Z" stroke="#9aacb9" stroke-opacity="0.42" stroke-width="2"/>
-    <path d="M365 181H1135V439H365Z" stroke="#5d9fa2" stroke-opacity="0.52" stroke-width="2"/>
-  </g>
-
-  <g>
-    <path d="M28 28H1472L1412 58H88Z" fill="#dfe7ed" fill-opacity="0.58"/>
-    <path d="M28 592H1472L1412 562H88Z" fill="#e9eef2" fill-opacity="0.8"/>
-    <path d="M28 28V592L88 562V58Z" fill="#f0f3f5" fill-opacity="0.9"/>
-    <path d="M1472 28V592L1412 562V58Z" fill="#e4eaef" fill-opacity="0.82"/>
-
-    <path d="M88 58H1412L1342 92H158Z" fill="#e9eef2" fill-opacity="0.8"/>
-    <path d="M88 562H1412L1342 528H158Z" fill="#edf1f4" fill-opacity="0.9"/>
-    <path d="M88 58V562L158 528V92Z" fill="#f4f7f9" fill-opacity="0.95"/>
-    <path d="M1412 58V562L1342 528V92Z" fill="#e5ebef" fill-opacity="0.85"/>
-
-    <path d="M158 92H1342L1268 126H232Z" fill="#dde5eb" fill-opacity="0.62"/>
-    <path d="M158 528H1342L1268 494H232Z" fill="#e9eef2" fill-opacity="0.92"/>
-    <path d="M158 92V528L232 494V126Z" fill="#f3f6f8" fill-opacity="0.96"/>
-    <path d="M1342 92V528L1268 494V126Z" fill="#e4eaef" fill-opacity="0.84"/>
-
-    <path d="M232 126H1268L1196 156H304Z" fill="#e9eef2" fill-opacity="0.78"/>
-    <path d="M232 494H1268L1196 464H304Z" fill="#edf1f4" fill-opacity="0.94"/>
-    <path d="M232 126V494L304 464V156Z" fill="#f4f7f9" fill-opacity="0.98"/>
-    <path d="M1268 126V494L1196 464V156Z" fill="#e3e9ee" fill-opacity="0.86"/>
-
-    <path d="M304 156H1196L1135 181H365Z" fill="#dce5eb" fill-opacity="0.62"/>
-    <path d="M304 464H1196L1135 439H365Z" fill="#edf1f4" fill-opacity="0.96"/>
-    <path d="M304 156V464L365 439V181Z" fill="#f4f7f9" fill-opacity="0.98"/>
-    <path d="M1196 156V464L1135 439V181Z" fill="#e3e9ee" fill-opacity="0.88"/>
-  </g>
-
-  <path d="M0 0H1500L1135 181H365Z" fill="url(#ceilingFalloff)"/>
-  <path d="M0 620H1500L1135 439H365Z" fill="url(#floorFalloff)"/>
-
-  <g fill="none" stroke="#7f9caf" stroke-opacity="0.24" stroke-width="1.5">
-    <path d="M28 28L750 310L1472 28M28 592L750 310L1472 592"/>
-    <path d="M88 58L750 310L1412 58M88 562L750 310L1412 562"/>
-    <path d="M158 92L750 310L1342 92M158 528L750 310L1342 528"/>
-  </g>
-  <g fill="none" stroke="#9aacb9" stroke-opacity="0.12" stroke-width="1">
-    <path d="M90 562H1410M160 528H1340M232 494H1268M304 464H1196M365 439H1135"/>
-    <path d="M165 592L750 310M365 592L750 310M565 592L750 310M935 592L750 310M1135 592L750 310M1335 592L750 310"/>
-  </g>
-
-  <g fill="none" stroke-linecap="round">
-    <path d="M88 58L158 92M1412 58L1342 92M88 562L158 528M1412 562L1342 528" stroke="#6ea8d9" stroke-opacity="0.38" stroke-width="3"/>
-    <path d="M232 126L304 156M1268 126L1196 156M232 494L304 464M1268 494L1196 464" stroke="#9a91c7" stroke-opacity="0.34" stroke-width="3"/>
-    <path d="M332 168L370 187M1168 168L1130 187M332 452L370 433M1168 452L1130 433" stroke="#5f8fb8" stroke-opacity="0.58" stroke-width="4"/>
-  </g>
-
-  <circle cx="750" cy="310" r="245" fill="url(#core)"/>
-  <circle cx="750" cy="310" r="104" fill="#9bc7e3" fill-opacity="0.06" filter="url(#softGlow)"/>
-  <path d="M410 199H1114L1143 228V418L1114 447H410L381 418V228Z" fill="#8caabd" fill-opacity="0.26" filter="url(#panelShadow)"/>
-  <path d="M398 187H1102L1130 215V405L1102 433H398L370 405V215Z" fill="url(#panel)" stroke="#7f9caf" stroke-opacity="0.9" stroke-width="3"/>
-  <path d="M414 202H1086L1114 230V390L1086 418H414L386 390V230Z" fill="none" stroke="#9bc7e3" stroke-opacity="0.46" stroke-width="1.5"/>
-  <path d="M438 217H1062" stroke="#f3f6f8" stroke-opacity="0.18" stroke-width="2"/>
-  <path d="M348 233V387M1152 233V387" stroke="#5f8fb8" stroke-opacity="0.42" stroke-width="3"/>
-  <path d="M348 233L365 216M348 387L365 404M1152 233L1135 216M1152 387L1135 404" fill="none" stroke="#9a91c7" stroke-opacity="0.46" stroke-width="3"/>
-  <g clip-path="url(#screenClip)" opacity="0.22">
-    <path d="M370 338H1130M370 350H1130" stroke="url(#cyanLine)"/>
-    <circle cx="750" cy="310" r="170" fill="none" stroke="#5f8fb8" stroke-opacity="0.32"/>
-    <circle cx="750" cy="310" r="132" fill="none" stroke="#9a91c7" stroke-opacity="0.2"/>
-  </g>
-
-  <g font-family="Inter, Segoe UI, Arial, sans-serif" text-anchor="middle">
-    <text x="750" y="246" fill="#5f8fb8" font-size="17" font-weight="650" letter-spacing="5">AI ENGINEERING NODE // 01</text>
-    <text x="750" y="322" fill="#202a33" font-size="78" font-weight="750" letter-spacing="4">ADHAM ELSAYED</text>
-    <text x="750" y="373" fill="#5d9fa2" font-size="39" font-weight="700" letter-spacing="8">AI ENGINEER</text>
-    <text x="750" y="405" fill="#566674" font-size="17" letter-spacing="3">MODEL INTELLIGENCE → WORKING SYSTEMS</text>
-    <text x="750" y="486" fill="#202a33" font-size="31" font-weight="650" letter-spacing="3">COMPUTER VISION · RAG</text>
-    <text x="750" y="522" fill="#202a33" font-size="31" font-weight="650" letter-spacing="3">LLM SYSTEMS · INTELLIGENT APPLICATIONS</text>
-    <text x="750" y="563" fill="#667684" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" letter-spacing="3">BUILD → EVALUATE → DEPLOY → IMPROVE</text>
-  </g>
-
-  <g fill="#5f8fb8">
-    <circle cx="34" cy="310" r="4"/><circle cx="1466" cy="310" r="4"/>
-    <circle cx="750" cy="28" r="4"/><circle cx="750" cy="592" r="4"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="700" viewBox="0 0 1500 700" role="img" aria-labelledby="title desc">
+<title id="title">Adham Elsayed — AI Engineer</title><desc id="desc">A bright three-dimensional AI engineering chamber with a floating identity panel and subtle motion.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EEF3F7"/><stop offset="0.52" stop-color="#E2E9EF"/><stop offset="1" stop-color="#D5E0E8"/></linearGradient><linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F7FAFC"/><stop offset="0.55" stop-color="#EDF2F6"/><stop offset="1" stop-color="#E5EBF0"/></linearGradient><radialGradient id="core" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#AEE3FF" stop-opacity="0.34"/><stop offset="0.22" stop-color="#5AA7FF" stop-opacity="0.14"/><stop offset="0.5" stop-color="#7D6CDC" stop-opacity="0.07"/><stop offset="1" stop-color="#EEF3F7" stop-opacity="0"/></radialGradient><filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#536575" flood-opacity="0.28"/></filter></defs>
+<rect width="1500" height="700" rx="34" fill="url(#bg)"/><ellipse cx="750" cy="338" rx="470" ry="300" fill="url(#core)"/>
+<polygon points="0,0 1500,0 1065,188 435,188" fill="#D8E2EA"/><polygon points="0,700 1500,700 1065,510 435,510" fill="#C7D2DB"/><polygon points="0,0 435,188 435,510 0,700" fill="#CBD6DE"/><polygon points="1500,0 1065,188 1065,510 1500,700" fill="#D3DDE5"/>
+<polygon points="240,90 1260,90 1010,218 490,218" fill="#C6D2DC"/><polygon points="240,610 1260,610 1010,482 490,482" fill="#BEC9D3"/><polygon points="240,90 490,218 490,482 240,610" fill="#C8D4DE"/><polygon points="1260,90 1010,218 1010,482 1260,610" fill="#D4DEE5"/>
+<polygon points="440,170 1060,170 930,248 570,248" fill="#BCCAD5"/><polygon points="440,530 1060,530 930,452 570,452" fill="#B6C1CB"/><polygon points="440,170 570,248 570,452 440,530" fill="#C4D0DA"/><polygon points="1060,170 930,248 930,452 1060,530" fill="#D0D9E0"/>
+<rect x="542" y="236" width="416" height="228" rx="30" fill="#5B6C7A" opacity="0.14"/>
+<circle cx="750" cy="350" r="74" fill="none" stroke="#3FA9A2" stroke-width="2" opacity="0.28"><animate attributeName="r" values="68;82;68" dur="6s" repeatCount="indefinite"/></circle>
+<g filter="url(#shadow)"><rect x="465" y="218" width="570" height="300" rx="32" fill="url(#panel)" stroke="#8AA5B9" stroke-opacity="0.42"/><rect x="485" y="238" width="530" height="260" rx="24" fill="#F8FAFC" stroke="#526575" stroke-opacity="0.08"/></g>
+<g font-family="Segoe UI, Arial, sans-serif"><g transform="translate(240 256)"><polygon points="0,20 155,0 190,22 35,44" fill="#C6D2DC"/><polygon points="0,20 35,44 35,136 0,112" fill="#B9C6D0"/><polygon points="35,44 190,22 190,114 35,136" fill="#D7E0E7"/><text x="78" y="83" text-anchor="middle" fill="#3FA9A2" font-size="22" font-weight="700">VISION</text><text x="78" y="110" text-anchor="middle" fill="#536778" font-size="15">EDGE AI</text></g><g transform="translate(1070 256)"><polygon points="0,22 155,44 190,20 35,0" fill="#C6D2DC"/><polygon points="155,44 190,20 190,112 155,136" fill="#B9C6D0"/><polygon points="0,22 155,44 155,136 0,114" fill="#D7E0E7"/><text x="82" y="83" text-anchor="middle" fill="#7668B4" font-size="22" font-weight="700">RAG / LLM</text><text x="82" y="110" text-anchor="middle" fill="#536778" font-size="15">EVIDENCE</text></g></g>
+<g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle"><text x="750" y="292" fill="#536778" font-size="16" font-weight="600" letter-spacing="4">AI ENGINEERING</text><text x="750" y="370" fill="#17212B" font-size="74" font-weight="800" letter-spacing="3">ADHAM ELSAYED</text><text x="750" y="418" fill="#397FC3" font-size="34" font-weight="700" letter-spacing="8">AI ENGINEER</text><text x="750" y="457" fill="#40515F" font-size="22" font-weight="600">Computer Vision · RAG · LLM Systems · Intelligent Applications</text><text x="750" y="490" fill="#647888" font-family="Consolas, monospace" font-size="17" letter-spacing="2">BUILD → EVALUATE → DEPLOY → IMPROVE</text></g>
+<circle r="5" fill="#3FA9A2"><animateMotion dur="5.5s" repeatCount="indefinite" path="M435,510 C560,560 940,560 1065,510"/></circle>
 </svg>
