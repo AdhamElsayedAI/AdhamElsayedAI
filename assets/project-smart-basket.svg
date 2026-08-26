@@ -1,43 +1,63 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
   <title id="title">Smart Basket project card</title>
   <desc id="desc">A computer vision retail system using YOLO, ONNX, Raspberry Pi 5, Firebase, and Flutter, with validated mAP metrics.</desc>
+  <style>
+    @media (prefers-color-scheme: light) {
+      [fill="#111827"]{fill:#d5dfe7}[stroke="#111827"]{stroke:#c3ced7}[stop-color="#111827"]{stop-color:#d5dfe7}
+      [fill="#151c26"]{fill:#f4f7f9}[stroke="#151c26"]{stroke:#dce4ea}[stop-color="#151c26"]{stop-color:#f4f7f9}
+      [fill="#19222e"]{fill:#edf1f4}[stroke="#19222e"]{stroke:#d5dfe7}[stop-color="#19222e"]{stop-color:#edf1f4}
+      [fill="#1d2733"]{fill:#e9eef2}[stroke="#1d2733"]{stroke:#cfd9e1}[stop-color="#1d2733"]{stop-color:#e9eef2}
+      [fill="#222d3a"]{fill:#e3e9ee}[stroke="#222d3a"]{stroke:#c8d3dc}[stop-color="#222d3a"]{stop-color:#e3e9ee}
+      [fill="#263241"]{fill:#dde5eb}[stroke="#263241"]{stroke:#becbd5}[stop-color="#263241"]{stop-color:#dde5eb}
+      [fill="#2b3745"]{fill:#d5dfe7}[stroke="#2b3745"]{stroke:#b7c6d1}[stop-color="#2b3745"]{stop-color:#d5dfe7}
+      [fill="#536575"]{fill:#71818f}[stroke="#536575"]{stroke:#cbd6df}[stop-color="#536575"]{stop-color:#cbd6df}
+      [fill="#7f9caf"]{fill:#667684}[stroke="#7f9caf"]{stroke:#9aacb9}[stop-color="#7f9caf"]{stop-color:#9aacb9}
+      [fill="#6ea8d9"]{fill:#5f8fb8}[stroke="#6ea8d9"]{stroke:#5f8fb8}[stop-color="#6ea8d9"]{stop-color:#5f8fb8}
+      [fill="#72c7c7"]{fill:#5d9fa2}[stroke="#72c7c7"]{stroke:#5d9fa2}[stop-color="#72c7c7"]{stop-color:#5d9fa2}
+      [fill="#9bc7e3"]{fill:#6f9ebc}[stroke="#9bc7e3"]{stroke:#6f9ebc}[stop-color="#9bc7e3"]{stop-color:#6f9ebc}
+      [fill="#9a91c7"]{fill:#8279ab}[stroke="#9a91c7"]{stroke:#8279ab}[stop-color="#9a91c7"]{stop-color:#8279ab}
+      [fill="#f3f6f8"]{fill:#202a33}[stroke="#f3f6f8"]{stroke:#202a33}
+      [fill="#b8c3ce"]{fill:#43515e}[stroke="#b8c3ce"]{stroke:#43515e}
+      [fill="#8493a3"]{fill:#667684}[stroke="#8493a3"]{stroke:#667684}
+    }
+  </style>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050b14"/><stop offset="1" stop-color="#0c2032"/></linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#31dcff"/><stop offset="1" stop-color="#5e83ff"/></linearGradient>
-    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#8edff4" stroke-opacity="0.04"/></pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#151c26"/><stop offset="1" stop-color="#1d2733"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6ea8d9"/><stop offset="1" stop-color="#9a91c7"/></linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#6ea8d9" stroke-opacity="0.04"/></pattern>
   </defs>
   <rect width="1200" height="380" rx="22" fill="url(#bg)"/>
   <rect width="1200" height="380" rx="22" fill="url(#grid)"/>
-  <path d="M24 24H1176V356H24Z" fill="none" stroke="#32516a"/>
+  <path d="M24 24H1176V356H24Z" fill="none" stroke="#536575"/>
   <path d="M24 24H438" stroke="url(#accent)" stroke-width="3"/>
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <text x="52" y="62" fill="#7d9aae" font-size="18" letter-spacing="2">PROJECT // 01 · EDGE VISION</text>
-    <text x="52" y="116" fill="#f1f8fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="49" font-weight="750">SMART BASKET</text>
-    <text x="54" y="150" fill="#6fddf5" font-size="21" letter-spacing="1.5">SYSTEM // COMPUTER VISION RETAIL AUTOMATION</text>
+    <text x="52" y="62" fill="#8493a3" font-size="18" letter-spacing="2">PROJECT // 01 · EDGE VISION</text>
+    <text x="52" y="116" fill="#f3f6f8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="49" font-weight="750">SMART BASKET</text>
+    <text x="54" y="150" fill="#6ea8d9" font-size="21" letter-spacing="1.5">SYSTEM // COMPUTER VISION RETAIL AUTOMATION</text>
   </g>
 
   <g transform="translate(54 190)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <g><rect width="146" height="58" rx="5" fill="#0e2132" stroke="#2f7189"/><text x="73" y="36" fill="#e3f3f8" font-size="18" text-anchor="middle">DETECT</text></g>
-    <path d="M155 29H189" stroke="#42dfff" stroke-width="2"/><path d="M184 23L192 29L184 35" fill="none" stroke="#42dfff" stroke-width="2"/>
-    <g transform="translate(198)"><rect width="146" height="58" rx="5" fill="#0e2132" stroke="#2f7189"/><text x="73" y="36" fill="#e3f3f8" font-size="18" text-anchor="middle">VALIDATE</text></g>
-    <path d="M353 29H387" stroke="#42dfff" stroke-width="2"/><path d="M382 23L390 29L382 35" fill="none" stroke="#42dfff" stroke-width="2"/>
-    <g transform="translate(396)"><rect width="146" height="58" rx="5" fill="#0e2132" stroke="#2f7189"/><text x="73" y="36" fill="#e3f3f8" font-size="18" text-anchor="middle">SYNC</text></g>
-    <path d="M551 29H585" stroke="#42dfff" stroke-width="2"/><path d="M580 23L588 29L580 35" fill="none" stroke="#42dfff" stroke-width="2"/>
-    <g transform="translate(594)"><rect width="146" height="58" rx="5" fill="#0e2132" stroke="#2f7189"/><text x="73" y="36" fill="#e3f3f8" font-size="18" text-anchor="middle">APP</text></g>
+    <g><rect width="146" height="58" rx="5" fill="#222d3a" stroke="#7f9caf"/><text x="73" y="36" fill="#f3f6f8" font-size="18" text-anchor="middle">DETECT</text></g>
+    <path d="M155 29H189" stroke="#6ea8d9" stroke-width="2"/><path d="M184 23L192 29L184 35" fill="none" stroke="#6ea8d9" stroke-width="2"/>
+    <g transform="translate(198)"><rect width="146" height="58" rx="5" fill="#222d3a" stroke="#7f9caf"/><text x="73" y="36" fill="#f3f6f8" font-size="18" text-anchor="middle">VALIDATE</text></g>
+    <path d="M353 29H387" stroke="#6ea8d9" stroke-width="2"/><path d="M382 23L390 29L382 35" fill="none" stroke="#6ea8d9" stroke-width="2"/>
+    <g transform="translate(396)"><rect width="146" height="58" rx="5" fill="#222d3a" stroke="#7f9caf"/><text x="73" y="36" fill="#f3f6f8" font-size="18" text-anchor="middle">SYNC</text></g>
+    <path d="M551 29H585" stroke="#6ea8d9" stroke-width="2"/><path d="M580 23L588 29L580 35" fill="none" stroke="#6ea8d9" stroke-width="2"/>
+    <g transform="translate(594)"><rect width="146" height="58" rx="5" fill="#222d3a" stroke="#7f9caf"/><text x="73" y="36" fill="#f3f6f8" font-size="18" text-anchor="middle">APP</text></g>
   </g>
 
   <g transform="translate(814 52)">
-    <path d="M18 14H304L322 32V238L304 256H18L0 238V32Z" fill="#07111d" stroke="#4c7792"/>
-    <text x="161" y="48" fill="#8da6b7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" text-anchor="middle" letter-spacing="1">EVIDENCE // VALIDATION NOTEBOOK</text>
-    <text x="52" y="124" fill="#57e1ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="51" font-weight="750">96.9%</text>
-    <text x="55" y="151" fill="#b4c5d1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19">mAP@0.5</text>
-    <path d="M40 174H282" stroke="#28465d"/>
-    <text x="52" y="227" fill="#8aa7ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="43" font-weight="750">84.8%</text>
-    <text x="55" y="250" fill="#b4c5d1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">mAP@0.5:0.95</text>
+    <path d="M18 14H304L322 32V238L304 256H18L0 238V32Z" fill="#19222e" stroke="#7f9caf"/>
+    <text x="161" y="48" fill="#8493a3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" text-anchor="middle" letter-spacing="1">EVIDENCE // VALIDATION NOTEBOOK</text>
+    <text x="52" y="124" fill="#9bc7e3" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="51" font-weight="750">96.9%</text>
+    <text x="55" y="151" fill="#b8c3ce" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19">mAP@0.5</text>
+    <path d="M40 174H282" stroke="#536575"/>
+    <text x="52" y="227" fill="#9a91c7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="43" font-weight="750">84.8%</text>
+    <text x="55" y="250" fill="#b8c3ce" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">mAP@0.5:0.95</text>
   </g>
 
-  <text x="54" y="292" fill="#91a8b9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="21">YOLO26n detection exported to FP32 and INT8 ONNX for edge inference.</text>
-  <path d="M54 316H1146" stroke="#243f53"/>
-  <text x="54" y="344" fill="#7896aa" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="1.5">YOLO26n · OPENCV · ONNX · RASPBERRY PI 5 · FIREBASE · FLUTTER</text>
+  <text x="54" y="292" fill="#b8c3ce" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="21">YOLO26n detection exported to FP32 and INT8 ONNX for edge inference.</text>
+  <path d="M54 316H1146" stroke="#536575"/>
+  <text x="54" y="344" fill="#8493a3" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="1.5">YOLO26n · OPENCV · ONNX · RASPBERRY PI 5 · FIREBASE · FLUTTER</text>
 </svg>

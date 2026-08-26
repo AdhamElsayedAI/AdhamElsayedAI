@@ -1,57 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="530" viewBox="0 0 1200 530" role="img" aria-labelledby="title desc">
   <title id="title">Verified technical stack</title>
   <desc id="desc">Technologies represented in Adham Elsayed's public repositories, grouped by engineering function.</desc>
+  <style>
+    @media (prefers-color-scheme: light) {
+      [fill="#111827"]{fill:#d5dfe7}[stroke="#111827"]{stroke:#c3ced7}[stop-color="#111827"]{stop-color:#d5dfe7}
+      [fill="#151c26"]{fill:#f4f7f9}[stroke="#151c26"]{stroke:#dce4ea}[stop-color="#151c26"]{stop-color:#f4f7f9}
+      [fill="#19222e"]{fill:#edf1f4}[stroke="#19222e"]{stroke:#d5dfe7}[stop-color="#19222e"]{stop-color:#edf1f4}
+      [fill="#1d2733"]{fill:#e9eef2}[stroke="#1d2733"]{stroke:#cfd9e1}[stop-color="#1d2733"]{stop-color:#e9eef2}
+      [fill="#222d3a"]{fill:#e3e9ee}[stroke="#222d3a"]{stroke:#c8d3dc}[stop-color="#222d3a"]{stop-color:#e3e9ee}
+      [fill="#263241"]{fill:#dde5eb}[stroke="#263241"]{stroke:#becbd5}[stop-color="#263241"]{stop-color:#dde5eb}
+      [fill="#2b3745"]{fill:#d5dfe7}[stroke="#2b3745"]{stroke:#b7c6d1}[stop-color="#2b3745"]{stop-color:#d5dfe7}
+      [fill="#536575"]{fill:#71818f}[stroke="#536575"]{stroke:#cbd6df}[stop-color="#536575"]{stop-color:#cbd6df}
+      [fill="#7f9caf"]{fill:#667684}[stroke="#7f9caf"]{stroke:#9aacb9}[stop-color="#7f9caf"]{stop-color:#9aacb9}
+      [fill="#6ea8d9"]{fill:#5f8fb8}[stroke="#6ea8d9"]{stroke:#5f8fb8}[stop-color="#6ea8d9"]{stop-color:#5f8fb8}
+      [fill="#72c7c7"]{fill:#5d9fa2}[stroke="#72c7c7"]{stroke:#5d9fa2}[stop-color="#72c7c7"]{stop-color:#5d9fa2}
+      [fill="#9bc7e3"]{fill:#6f9ebc}[stroke="#9bc7e3"]{stroke:#6f9ebc}[stop-color="#9bc7e3"]{stop-color:#6f9ebc}
+      [fill="#9a91c7"]{fill:#8279ab}[stroke="#9a91c7"]{stroke:#8279ab}[stop-color="#9a91c7"]{stop-color:#8279ab}
+      [fill="#f3f6f8"]{fill:#202a33}[stroke="#f3f6f8"]{stroke:#202a33}
+      [fill="#b8c3ce"]{fill:#43515e}[stroke="#b8c3ce"]{stroke:#43515e}
+      [fill="#8493a3"]{fill:#667684}[stroke="#8493a3"]{stroke:#667684}
+    }
+  </style>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050a13"/><stop offset="1" stop-color="#0b1c2e"/></linearGradient>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1a2a"/><stop offset="1" stop-color="#11273a"/></linearGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#86dff5" stroke-opacity="0.04"/></pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#151c26"/><stop offset="1" stop-color="#1d2733"/></linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d2733"/><stop offset="1" stop-color="#222d3a"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#6ea8d9" stroke-opacity="0.04"/></pattern>
   </defs>
   <rect width="1200" height="530" rx="24" fill="url(#bg)"/>
   <rect width="1200" height="530" rx="24" fill="url(#grid)"/>
-  <text x="54" y="54" fill="#4addff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="4">VERIFIED STACK // GROUPED BY SYSTEM FUNCTION</text>
-  <path d="M54 74H1146" stroke="#29475c"/>
+  <text x="54" y="54" fill="#6ea8d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="4">VERIFIED STACK // GROUPED BY SYSTEM FUNCTION</text>
+  <path d="M54 74H1146" stroke="#536575"/>
 
   <g font-family="Inter, Segoe UI, Arial, sans-serif">
     <g transform="translate(46 105)">
-      <path d="M12 14H326L338 26V176H12L0 164V26Z" fill="#050b14" stroke="#1e3b4f"/>
-      <path d="M0 0H314L326 12V162H0Z" fill="url(#panel)" stroke="#38d9ff" stroke-opacity="0.66" stroke-width="2"/>
-      <text x="26" y="38" fill="#54dfff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" letter-spacing="2">AI CORE</text>
-      <text x="26" y="82" fill="#edf7fb" font-size="26" font-weight="650">Python · PyTorch</text>
-      <text x="26" y="120" fill="#9cb0c0" font-size="22">Ultralytics</text>
-      <text x="26" y="150" fill="#9cb0c0" font-size="22">Sentence Transformers</text>
+      <path d="M12 14H326L338 26V176H12L0 164V26Z" fill="#151c26" stroke="#536575"/>
+      <path d="M0 0H314L326 12V162H0Z" fill="url(#panel)" stroke="#6ea8d9" stroke-opacity="0.66" stroke-width="2"/>
+      <text x="26" y="38" fill="#6ea8d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" letter-spacing="2">AI CORE</text>
+      <text x="26" y="82" fill="#f3f6f8" font-size="26" font-weight="650">Python · PyTorch</text>
+      <text x="26" y="120" fill="#b8c3ce" font-size="22">Ultralytics</text>
+      <text x="26" y="150" fill="#b8c3ce" font-size="22">Sentence Transformers</text>
     </g>
     <g transform="translate(436 105)">
-      <path d="M12 14H326L338 26V176H12L0 164V26Z" fill="#050b14" stroke="#1e3b4f"/>
-      <path d="M0 0H314L326 12V162H0Z" fill="url(#panel)" stroke="#4bbcff" stroke-opacity="0.66" stroke-width="2"/>
-      <text x="26" y="38" fill="#65c9ff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" letter-spacing="2">PERCEPTION</text>
-      <text x="26" y="82" fill="#edf7fb" font-size="26" font-weight="650">YOLO · OpenCV</text>
-      <text x="26" y="120" fill="#9cb0c0" font-size="22">ONNX inference</text>
-      <text x="26" y="150" fill="#9cb0c0" font-size="22">Raspberry Pi 5</text>
+      <path d="M12 14H326L338 26V176H12L0 164V26Z" fill="#151c26" stroke="#536575"/>
+      <path d="M0 0H314L326 12V162H0Z" fill="url(#panel)" stroke="#6ea8d9" stroke-opacity="0.66" stroke-width="2"/>
+      <text x="26" y="38" fill="#6ea8d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" letter-spacing="2">PERCEPTION</text>
+      <text x="26" y="82" fill="#f3f6f8" font-size="26" font-weight="650">YOLO · OpenCV</text>
+      <text x="26" y="120" fill="#b8c3ce" font-size="22">ONNX inference</text>
+      <text x="26" y="150" fill="#b8c3ce" font-size="22">Raspberry Pi 5</text>
     </g>
     <g transform="translate(826 105)">
-      <path d="M12 14H326L338 26V176H12L0 164V26Z" fill="#050b14" stroke="#1e3b4f"/>
-      <path d="M0 0H314L326 12V162H0Z" fill="url(#panel)" stroke="#687eff" stroke-opacity="0.66" stroke-width="2"/>
-      <text x="26" y="38" fill="#8f9bff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" letter-spacing="2">RETRIEVAL</text>
-      <text x="26" y="82" fill="#edf7fb" font-size="26" font-weight="650">RAG · BGE</text>
-      <text x="26" y="120" fill="#9cb0c0" font-size="22">ChromaDB · BM25</text>
-      <text x="26" y="150" fill="#9cb0c0" font-size="22">LLM integration</text>
+      <path d="M12 14H326L338 26V176H12L0 164V26Z" fill="#151c26" stroke="#536575"/>
+      <path d="M0 0H314L326 12V162H0Z" fill="url(#panel)" stroke="#9a91c7" stroke-opacity="0.66" stroke-width="2"/>
+      <text x="26" y="38" fill="#9a91c7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" letter-spacing="2">RETRIEVAL</text>
+      <text x="26" y="82" fill="#f3f6f8" font-size="26" font-weight="650">RAG · BGE</text>
+      <text x="26" y="120" fill="#b8c3ce" font-size="22">ChromaDB · BM25</text>
+      <text x="26" y="150" fill="#b8c3ce" font-size="22">LLM integration</text>
     </g>
 
     <g transform="translate(241 323)">
-      <path d="M12 14H326L338 26V176H12L0 164V26Z" fill="#050b14" stroke="#1e3b4f"/>
-      <path d="M0 0H314L326 12V162H0Z" fill="url(#panel)" stroke="#4bbcff" stroke-opacity="0.66" stroke-width="2"/>
-      <text x="26" y="38" fill="#65c9ff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" letter-spacing="2">APPLICATION</text>
-      <text x="26" y="82" fill="#edf7fb" font-size="26" font-weight="650">FastAPI · REST APIs</text>
-      <text x="26" y="120" fill="#9cb0c0" font-size="22">HTML · CSS · JavaScript</text>
-      <text x="26" y="150" fill="#9cb0c0" font-size="22">Flutter</text>
+      <path d="M12 14H326L338 26V176H12L0 164V26Z" fill="#151c26" stroke="#536575"/>
+      <path d="M0 0H314L326 12V162H0Z" fill="url(#panel)" stroke="#6ea8d9" stroke-opacity="0.66" stroke-width="2"/>
+      <text x="26" y="38" fill="#6ea8d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" letter-spacing="2">APPLICATION</text>
+      <text x="26" y="82" fill="#f3f6f8" font-size="26" font-weight="650">FastAPI · REST APIs</text>
+      <text x="26" y="120" fill="#b8c3ce" font-size="22">HTML · CSS · JavaScript</text>
+      <text x="26" y="150" fill="#b8c3ce" font-size="22">Flutter</text>
     </g>
     <g transform="translate(631 323)">
-      <path d="M12 14H326L338 26V176H12L0 164V26Z" fill="#050b14" stroke="#1e3b4f"/>
-      <path d="M0 0H314L326 12V162H0Z" fill="url(#panel)" stroke="#38d9ff" stroke-opacity="0.66" stroke-width="2"/>
-      <text x="26" y="38" fill="#54dfff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" letter-spacing="2">DATA &amp; DELIVERY</text>
-      <text x="26" y="82" fill="#edf7fb" font-size="26" font-weight="650">PySpark · SQLAlchemy</text>
-      <text x="26" y="120" fill="#9cb0c0" font-size="22">Firebase · Docker</text>
-      <text x="26" y="150" fill="#9cb0c0" font-size="22">Git · GitHub</text>
+      <path d="M12 14H326L338 26V176H12L0 164V26Z" fill="#151c26" stroke="#536575"/>
+      <path d="M0 0H314L326 12V162H0Z" fill="url(#panel)" stroke="#6ea8d9" stroke-opacity="0.66" stroke-width="2"/>
+      <text x="26" y="38" fill="#6ea8d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17" letter-spacing="2">DATA &amp; DELIVERY</text>
+      <text x="26" y="82" fill="#f3f6f8" font-size="26" font-weight="650">PySpark · SQLAlchemy</text>
+      <text x="26" y="120" fill="#b8c3ce" font-size="22">Firebase · Docker</text>
+      <text x="26" y="150" fill="#b8c3ce" font-size="22">Git · GitHub</text>
     </g>
   </g>
 </svg>
