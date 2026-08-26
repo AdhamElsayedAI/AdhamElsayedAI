@@ -1,115 +1,104 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-    <img src="./assets/hero-dark.svg" alt="Adham Elsayed — AI Engineer working across computer vision, RAG, LLM systems, and intelligent applications" width="100%">
-  </picture>
-</p>
+### Adham Elsayed
 
-<p align="center">
-  <a href="https://adhamelsayedai.github.io/"><code>PORTFOLIO</code></a>
-  &nbsp;·&nbsp;
-  <a href="#featured-work"><code>PROJECTS</code></a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/adham-elsayed-"><code>LINKEDIN</code></a>
-  &nbsp;·&nbsp;
-  <a href="https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf"><code>RÉSUMÉ</code></a>
-  &nbsp;·&nbsp;
-  <a href="mailto:adhamelsayed515@gmail.com"><code>CONTACT</code></a>
-</p>
+**AI Engineer** — computer vision, RAG / LLM systems, evaluation, and intelligent applications.
 
-<img src="./assets/terminal.svg" alt="Adham AI identity console: AI Engineer in Egypt focused on computer vision, RAG, LLM systems, and intelligent applications" width="100%">
+I build end-to-end AI systems where model behavior is measured, failure modes are visible, and the model is connected to a real workflow.
 
-## About
+[Portfolio](https://adhamelsayedai.github.io/) · [LinkedIn](https://www.linkedin.com/in/adham-elsayed-) · [Résumé](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf) · [Email](mailto:adhamelsayed515@gmail.com)
 
-I am an AI Engineer in Egypt building complete systems around models: data, training or retrieval, evaluation, inference, APIs, and usable interfaces. My strongest public work sits at the intersection of computer vision, edge deployment, and evidence-grounded RAG. I care about measured behavior, visible failure modes, and the engineering needed to move beyond notebook-only demos.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-hero-light.svg">
+  <img src="./assets/profile-hero-light.svg" alt="Adham Elsayed AI systems map connecting perception, retrieval, evaluation, serving, and product workflows" width="100%">
+</picture>
 
-## Engineering approach
+---
 
-<img src="./assets/pipeline.svg" alt="Engineering pipeline from data through model, evaluation, serving, product, and iteration" width="100%">
+## Selected systems
 
-## Featured work
+### [Smart Basket](https://github.com/AdhamElsayedAI/Smart-Basket) — edge computer vision for retail state
 
-### 01 // Smart Basket
+A smart-shopping system that turns camera detections into a stable basket state and synchronizes that state to an application layer.
 
-<a href="https://github.com/AdhamElsayedAI/Smart-Basket">
-  <img src="./assets/project-smart-basket.svg" alt="Smart Basket: YOLO retail detection with Raspberry Pi 5, ONNX, Firebase, and Flutter" width="100%">
-</a>
+<img src="./assets/system-smart-basket.svg" alt="Smart Basket architecture: Pi Camera to YOLO to ONNX Runtime on Raspberry Pi 5 to basket-state tracking to Firebase to Flutter" width="100%">
 
-A retail automation system that detects grocery products, maintains basket state, and synchronizes item data for an application layer.
+- **System:** Pi Camera → YOLO detector → ONNX Runtime on Raspberry Pi 5 → basket-state tracker → Firebase → Flutter.
+- **Edge engineering:** OpenCV inference, Pi Camera support, CPU execution, and Firebase updates only when basket state changes.
+- **Measured result:** **`mAP@0.5 = 96.89%`** and **`mAP@0.5:0.95 = 84.79%`** in the committed validation output.
 
-- Trained a four-class YOLO26n detector at 640 px, then exported a 320 px ONNX model for edge inference.
-- Produced FP32 and dynamically quantized INT8 ONNX artifacts; the executed notebook reports approximately 9.7 MB and 2.7 MB respectively.
-- Implemented OpenCV inference for desktop and Raspberry Pi 5, with Pi Camera support and Firebase updates when basket state changes.
-- Validation output in the committed notebook reports **96.89% mAP@0.5** and **84.79% mAP@0.5:0.95**.
+[Repository →](https://github.com/AdhamElsayedAI/Smart-Basket)
 
-[Inspect the repository →](https://github.com/AdhamElsayedAI/Smart-Basket)
+---
 
-### 02 // MedFlow
+### [MedFlow](https://github.com/AdhamElsayedAI/Medflow) — evidence-grounded RAG with explicit safety gates
 
-<a href="https://github.com/AdhamElsayedAI/Medflow">
-  <img src="./assets/project-medflow.svg" alt="MedFlow: evidence-grounded thyroid clinical RAG prototype with retrieval and safety evaluation" width="100%">
-</a>
+A thyroid-focused clinical AI prototype built around a stricter idea than “retrieve and generate”: evidence sufficiency, citation resolution, claim support, numeric validation, and a final safety policy are separate system concerns.
 
-An evidence-grounded thyroid clinical AI prototype. This is shown transparently as a **team project and public fork**; Adham is listed in the repository's team section.
+<img src="./assets/system-medflow.svg" alt="MedFlow architecture: documents to BGE embeddings to hybrid retrieval to evidence gate to grounded LLM to validators to final safety policy" width="100%">
 
-- Separates its frozen dense-retrieval benchmark from the product's hybrid dense + BM25 + reciprocal-rank-fusion path.
-- Routes evidence through sufficiency checks, grounded generation, citation resolution, claim validation, numeric validation, and a final safety policy.
-- The canonical strict passage-level benchmark reports **53.12% Precision@4**, **87.50% Hit@4**, and **MRR ≈ 0.7031**.
-- These are internal engineering results—not clinical validation or a medical-accuracy claim.
+- **Retrieval core:** BGE-small embeddings + ChromaDB, with a product hybrid path that also uses BM25 and reciprocal-rank fusion.
+- **Safety path:** evidence gate → grounded structured generation → citation / claim / numeric validators → answer, caution, abstain, or redirect.
+- **Canonical retrieval benchmark:** **`Precision@4 = 53.12%`**, **`Hit@4 = 87.50%`**, **`MRR ≈ 0.7031`**.
+- These are **engineering benchmark results, not clinical validation**. MedFlow is a **team project / public fork**, with Adham listed in the repository team.
 
-[Inspect the public fork →](https://github.com/AdhamElsayedAI/Medflow)
+[Repository →](https://github.com/AdhamElsayedAI/Medflow)
 
-### 03 // Code AI Proctor
+---
 
-<a href="https://github.com/AdhamElsayedAI/code-ai-proctor">
-  <img src="./assets/project-code-ai-proctor.svg" alt="Code AI Proctor: webcam capture through YOLO classification, FastAPI alerts, review, and audit records" width="100%">
-</a>
+### [Code AI Proctor](https://github.com/AdhamElsayedAI/code-ai-proctor) — visual inference connected to an auditable exam workflow
 
-A self-hosted online-exam monitoring prototype that connects local visual inference to role-based quiz and review workflows.
+A self-hosted online-exam platform where local vision inference is only one part of the system; the rest is exam state, incident persistence, teacher review, and student appeals.
 
-- Uses a binary YOLO classifier (`cheating` / `normal`) with square center-cropping for webcam frames.
-- Sends browser captures to a FastAPI inference endpoint, then records confirmed incidents for teacher review and student appeals.
-- Includes organization, teacher, student, class, quiz, grade-export, and notification flows rather than stopping at model inference.
-- Supports SQLAlchemy-backed persistence and local PyTorch/CUDA inference, with Docker configuration included.
+<img src="./assets/system-code-ai-proctor.svg" alt="Code AI Proctor architecture: webcam to FastAPI to YOLO classifier to temporal alert logic to incident persistence to teacher review and appeals" width="100%">
 
-[Inspect the repository →](https://github.com/AdhamElsayedAI/code-ai-proctor)
+- **Inference:** browser webcam capture → FastAPI → local YOLO classification (`cheating` / `normal`).
+- **Stability:** batch / streak logic reduces single-frame instability before a formal alert is recorded.
+- **Workflow:** organization, teacher, student, quiz, incident, notification, grade-export, and appeal flows.
+- **Persistence:** SQLAlchemy-backed records and incident snapshots; local PyTorch/CUDA inference with CPU fallback behavior.
 
-Additional public data work: [Telco Customer Churn with PySpark ML](https://github.com/AdhamElsayedAI/Telco-Customer-Churn-Project) and [Student Performance Analysis](https://github.com/AdhamElsayedAI/Student-Performance-Analysis).
+[Repository →](https://github.com/AdhamElsayedAI/code-ai-proctor)
 
-## Technical stack
+---
 
-<img src="./assets/stack.svg" alt="Verified technologies grouped into AI core, perception, retrieval, application, data, and delivery" width="100%">
+## How I approach AI engineering
 
-The stack above is limited to technologies represented in the linked public repositories. It is a system map, not a self-rated skill chart.
+- **Treat the model as a component, not the product.** Data flow, inference, APIs, persistence, and user workflow matter just as much.
+- **Measure before adding complexity.** Retrieval quality, threshold behavior, failure cases, and latency should decide what stays in the system.
+- **Keep evidence visible.** Metrics belong next to the exact configuration they describe; safety and validation claims should be explicit about their scope.
 
-## System context
+---
 
-- **B.Sc. Artificial Intelligence Engineering** — Mansoura University, expected February 2027.
-- **Machine Learning Engineering Trainee** — Digital Egypt Pioneers Initiative, Microsoft AI & Data Science track, September 2025 to July 2026.
+## Tools I reach for
 
-## Current signal
+**AI / ML** — `Python` · `PyTorch` · `TensorFlow` · `scikit-learn`  
+**Computer vision / edge** — `YOLO` · `OpenCV` · `ONNX Runtime` · `Raspberry Pi`  
+**RAG / LLM systems** — `BGE` · `ChromaDB` · `BM25` · `RRF` · structured LLM APIs  
+**Application / data** — `FastAPI` · `REST` · `Firebase` · `SQLAlchemy` · `SQLite / SQL` · `Flutter`  
+**Delivery** — `Git` · `GitHub` · `Docker` · `Linux`
 
-<img src="./assets/focus.svg" alt="Current focus: end-to-end AI systems, computer vision and edge inference, RAG and LLM safety, and evaluation through product delivery" width="100%">
+---
 
-<p align="center">
-  <code>PUBLIC SIGNAL</code>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/AdhamElsayedAI?tab=repositories">Repositories</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/AdhamElsayedAI">Recent activity</a>
-</p>
+## Background
 
-## Open channel
+- **B.Sc. Artificial Intelligence Engineering** — Mansoura University.
+- **Digital Egypt Pioneers Initiative** — Microsoft AI & Data Science / Machine Learning Engineering track.
 
-<p align="center">
-  <a href="https://adhamelsayedai.github.io/">Portfolio</a>
-  &nbsp;·&nbsp;
-  <a href="https://www.linkedin.com/in/adham-elsayed-">LinkedIn</a>
-  &nbsp;·&nbsp;
-  <a href="https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf">Résumé</a>
-  &nbsp;·&nbsp;
-  <a href="mailto:adhamelsayed515@gmail.com">Email</a>
-</p>
+<details>
+<summary><strong>More public work</strong></summary>
 
-<img src="./assets/footer.svg" alt="Build, test, ship, iterate — Adham Elsayed, AI Engineering, Egypt" width="100%">
+<br>
+
+- [Telco Customer Churn with PySpark ML](https://github.com/AdhamElsayedAI/Telco-Customer-Churn-Project)
+- [Student Performance Analysis](https://github.com/AdhamElsayedAI/Student-Performance-Analysis)
+
+</details>
+
+---
+
+### Current focus
+
+Production-shaped AI systems · computer vision at the edge · grounded RAG / LLM engineering · evaluation · AI product engineering
+
+**Open to:** AI / ML engineering internships, graduate roles, and technically serious collaborations.
+
+[Portfolio](https://adhamelsayedai.github.io/) · [LinkedIn](https://www.linkedin.com/in/adham-elsayed-) · [Email](mailto:adhamelsayed515@gmail.com)
