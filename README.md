@@ -4,23 +4,21 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:0d1117&height=120&section=header&animation=fadeIn" width="100%"/>
-
 <a href="https://github.com/AdhamElsayedAI">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=32&pause=3000&color=58A6FF&center=true&vCenter=true&width=850&height=70&lines=Adham+Elsayed" alt="Adham Elsayed"/>
-</a>
-
-<a href="https://github.com/AdhamElsayedAI">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&pause=1100&color=8B949E&center=true&vCenter=true&width=900&height=44&lines=AI+Engineer+%7C+Computer+Vision+%7C+RAG+%2F+LLM+Systems;Edge+AI+%7C+Model+Evaluation+%7C+Intelligent+Applications;Build+the+model.+Measure+the+behavior.+Ship+the+system." alt="AI engineering focus"/>
+  <img src="./assets/identity-intro.svg" alt="Adham Elsayed — AI Engineer; animated identity with portrait, depth layers, and custom name reveal" width="100%"/>
 </a>
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adham_Elsayed-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adham-elsayed-)
-[![Portfolio](https://img.shields.io/badge/Portfolio-adhamelsayedai.github.io-6E40C9?style=for-the-badge&logo=githubpages&logoColor=white)](https://adhamelsayedai.github.io/)
-[![GitHub](https://img.shields.io/badge/GitHub-AdhamElsayedAI-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AdhamElsayedAI)
-[![Profile Views](https://komarev.com/ghpvc/?username=AdhamElsayedAI&style=for-the-badge&color=58A6FF&label=PROFILE+VIEWS)](https://github.com/AdhamElsayedAI)
-[![Public Repos](https://img.shields.io/badge/Public_Repos-7-238636?style=for-the-badge&logo=github)](https://github.com/AdhamElsayedAI?tab=repositories)
+<a href="https://adhamelsayedai.github.io/"><img src="./assets/portfolio-link.svg" alt="Portfolio" width="19%"/></a>
+<a href="https://www.linkedin.com/in/adham-elsayed-"><img src="./assets/linkedin-link.svg" alt="LinkedIn" width="19%"/></a>
+<a href="https://github.com/AdhamElsayedAI?tab=repositories"><img src="./assets/github-link.svg" alt="Public repositories" width="19%"/></a>
+<a href="https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf"><img src="./assets/resume-link.svg" alt="Resume" width="19%"/></a>
+<a href="mailto:adhamelsayed515@gmail.com"><img src="./assets/mail-link.svg" alt="Contact" width="19%"/></a>
+
+<img src="./assets/entry-signal.svg" alt="Animated AI engineering signal from perception through retrieval and evaluation to serving and product" width="100%"/>
+
+<sub><b>AI ENGINEER</b> · Computer Vision · RAG / LLM Systems · Edge AI · Evaluation · Intelligent Applications</sub>
 
 </div>
 
@@ -110,7 +108,6 @@ flowchart LR
     EDGE --> STATE["🛒 BasketStateTracker\nConfirm / Hold Logic"]
     STATE -->|"state changed"| FB[("☁️ Firebase\nRealtime Database")]
     FB --> APP["📱 Flutter App\nBasket UI"]
-
     EDGE -.->|"FPS / detections"| MON["📊 Runtime Monitor"]
 ```
 
@@ -145,7 +142,6 @@ flowchart TB
     UI --> API["⚙️ FastAPI Backend"]
     API --> GUARD["🛡️ Input Guardrail"]
     GUARD --> RISK{"Risk Class"}
-
     RISK -->|"REFUSE / REDIRECT"| SAFE["↩️ Safe Redirect"]
     RISK -->|"ALLOWED / CAUTION"| RET["🔎 Retrieval Layer"]
 
@@ -163,15 +159,12 @@ flowchart TB
     GATE -->|"BLOCK"| ABSTAIN["⛔ Abstain"]
     GATE -->|"PASS / DOWNGRADE"| PACK["📦 Evidence Packaging\nE1..E4"]
     PACK --> LLM["🧠 Grounded LLM\nStructured Output"]
-
     LLM --> CITE["🧾 Citation Engine"]
     LLM --> CLAIM["✅ Claim Validator"]
     LLM --> NUM["🔢 Numeric / Dosage Validator"]
-
     CITE --> POLICY{"🛡️ Final Safety Policy"}
     CLAIM --> POLICY
     NUM --> POLICY
-
     POLICY -->|"Safe"| ANSWER["✅ Answer"]
     POLICY -->|"Caution"| CAUTION["⚠️ Answer With Caution"]
     POLICY -->|"Insufficient"| ABSTAIN
