@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+<title id="title">Smart Basket system architecture</title>
+<desc id="desc">Pi Camera frames flow through YOLO and ONNX Runtime on Raspberry Pi 5, then through basket state tracking to Firebase and Flutter.</desc>
+<rect width="1200" height="190" rx="18" fill="#f6f8fa"/>
+<path d="M0 1H1200" stroke="#1a7f37" stroke-width="2"/>
+<text x="28" y="38" fill="#57606a" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">SMART BASKET / EDGE VISION</text>
+<g font-family="Inter, Segoe UI, Arial, sans-serif" text-anchor="middle" font-size="15" font-weight="700">
+  <g transform="translate(28 68)"><rect width="150" height="68" rx="12" fill="#fff" stroke="#d0d7de"/><text x="75" y="40" fill="#24292f">Pi Camera</text></g>
+  <g transform="translate(222 68)"><rect width="150" height="68" rx="12" fill="#fff" stroke="#d0d7de"/><text x="75" y="40" fill="#24292f">YOLO</text></g>
+  <g transform="translate(416 68)"><rect width="150" height="68" rx="12" fill="#fff" stroke="#d0d7de"/><text x="75" y="31" fill="#24292f">ONNX Runtime</text><text x="75" y="51" fill="#57606a" font-size="12" font-weight="500">Raspberry Pi 5</text></g>
+  <g transform="translate(610 68)"><rect width="150" height="68" rx="12" fill="#fff" stroke="#d0d7de"/><text x="75" y="31" fill="#24292f">Basket state</text><text x="75" y="51" fill="#57606a" font-size="12" font-weight="500">confirm / hold</text></g>
+  <g transform="translate(804 68)"><rect width="150" height="68" rx="12" fill="#fff" stroke="#d0d7de"/><text x="75" y="40" fill="#24292f">Firebase</text></g>
+  <g transform="translate(998 68)"><rect width="174" height="68" rx="12" fill="#fff" stroke="#1a7f37"/><text x="87" y="40" fill="#24292f">Flutter app</text></g>
+</g>
+<g stroke="#8c959f" stroke-width="2" fill="none">
+  <path d="M178 102H222"/><path d="M372 102H416"/><path d="M566 102H610"/><path d="M760 102H804"/><path d="M954 102H998"/>
+</g>
+<g fill="#1a7f37"><circle cx="200" cy="102" r="3"/><circle cx="394" cy="102" r="3"/><circle cx="588" cy="102" r="3"/><circle cx="782" cy="102" r="3"/><circle cx="976" cy="102" r="3"/></g>
+</svg>
