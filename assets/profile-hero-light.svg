@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="420" viewBox="0 0 1440 420" role="img" aria-labelledby="title desc">
+<title id="title">Adham Elsayed — AI systems map</title>
+<desc id="desc">A restrained light-theme systems diagram connecting perception, retrieval, evaluation, serving, and product workflows.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffffff"/>
+    <stop offset="1" stop-color="#f6f8fa"/>
+  </linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#1a7f37"/>
+    <stop offset="1" stop-color="#2da44e"/>
+  </linearGradient>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M36 0H0V36" fill="none" stroke="#d0d7de" stroke-opacity=".32" stroke-width="1"/>
+  </pattern>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#57606a" flood-opacity=".12"/>
+  </filter>
+</defs>
+<rect width="1440" height="420" rx="24" fill="url(#bg)"/>
+<rect width="1440" height="420" rx="24" fill="url(#grid)"/>
+<path d="M0 1H1440" stroke="url(#accent)" stroke-width="2"/>
+<g font-family="Inter, Segoe UI, Arial, sans-serif">
+  <text x="64" y="72" fill="#1a7f37" font-size="15" font-weight="700" letter-spacing="3">AI ENGINEERING / SYSTEMS</text>
+  <text x="64" y="142" fill="#24292f" font-size="50" font-weight="760">Models are components.</text>
+  <text x="64" y="202" fill="#24292f" font-size="50" font-weight="760">Systems are the product.</text>
+  <text x="64" y="252" fill="#57606a" font-size="22">Computer vision · RAG / LLM systems · evaluation · intelligent applications</text>
+  <text x="64" y="322" fill="#24292f" font-size="18" font-weight="600">ADHAM ELSAYED</text>
+  <text x="64" y="350" fill="#57606a" font-size="16">AI Engineer · Egypt</text>
+</g>
+<g transform="translate(800 54)" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="576" height="312" rx="22" fill="#ffffff" stroke="#d0d7de" filter="url(#shadow)"/>
+  <text x="30" y="42" fill="#57606a" font-size="13" font-weight="700" letter-spacing="2">SYSTEM TRACE</text>
+  <g font-size="14" font-weight="700">
+    <rect x="30" y="78" width="132" height="58" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="96" y="112" text-anchor="middle" fill="#24292f">PERCEPTION</text>
+    <rect x="30" y="176" width="132" height="58" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="96" y="210" text-anchor="middle" fill="#24292f">RETRIEVAL</text>
+    <rect x="220" y="127" width="132" height="58" rx="12" fill="#ffffff" stroke="#1a7f37" stroke-opacity=".62"/>
+    <text x="286" y="161" text-anchor="middle" fill="#24292f">EVALUATE</text>
+    <rect x="410" y="78" width="132" height="58" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="476" y="112" text-anchor="middle" fill="#24292f">SERVE</text>
+    <rect x="410" y="176" width="132" height="58" rx="12" fill="#ffffff" stroke="#d0d7de"/>
+    <text x="476" y="210" text-anchor="middle" fill="#24292f">PRODUCT</text>
+  </g>
+  <g fill="none" stroke="#afb8c1" stroke-width="2">
+    <path d="M162 107H206C214 107 220 114 220 122V142"/>
+    <path d="M162 205H206C214 205 220 198 220 190V170"/>
+    <path d="M352 156H390C400 156 410 146 410 136V108"/>
+    <path d="M352 156H390C400 156 410 166 410 176V205"/>
+  </g>
+  <circle cx="286" cy="156" r="5" fill="#1a7f37"/>
+  <text x="30" y="278" fill="#57606a" font-size="13">measure behavior → expose failure modes → ship the workflow</text>
+</g>
+</svg>
