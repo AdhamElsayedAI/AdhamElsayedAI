@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/adham-cutout.webp" alt="Adham Elsayed" width="190" />
+<img src="./assets/adham-portrait-float.webp" alt="Adham Elsayed" width="260" />
 
 <img src="./assets/identity-intro.svg" alt="Adham Elsayed — AI Engineer" width="100%" />
 
@@ -8,8 +8,6 @@
 <a href="https://www.linkedin.com/in/adham-elsayed-"><img src="./assets/linkedin-link.svg" alt="LinkedIn" width="23.5%" /></a>
 <a href="https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf"><img src="./assets/resume-link.svg" alt="Résumé" width="23.5%" /></a>
 <a href="mailto:adhamelsayed515@gmail.com"><img src="./assets/mail-link.svg" alt="Contact" width="23.5%" /></a>
-
-<img src="./assets/entry-signal.svg" alt="Perception to retrieval to evaluation to serving to product" width="100%" />
 
 </div>
 
