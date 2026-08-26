@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Adham AI identity console</title>
+  <desc id="desc">A recessed terminal identifies Adham Elsayed as an AI Engineer in Egypt and shows his engineering approach.</desc>
+  <defs>
+    <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08111e"/>
+      <stop offset="1" stop-color="#0d2134"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#050b14"/>
+      <stop offset="1" stop-color="#071321"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#36dcff" stop-opacity="0.2"/>
+      <stop offset="0.5" stop-color="#36dcff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#6679ff" stop-opacity="0.2"/>
+    </linearGradient>
+    <pattern id="scan" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 7.5H8" stroke="#8eddf1" stroke-opacity="0.025"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="500" rx="24" fill="#040812"/>
+  <path d="M44 30H1156L1180 54V446L1156 470H44L20 446V54Z" fill="url(#shell)" stroke="#34516b" stroke-width="2"/>
+  <path d="M62 64H1138L1152 78V422L1138 436H62L48 422V78Z" fill="url(#screen)" stroke="url(#edge)" stroke-width="2"/>
+  <path d="M20 54L48 78V422L20 446M1180 54L1152 78V422L1180 446" fill="none" stroke="#496c85" stroke-opacity="0.5"/>
+  <rect x="48" y="78" width="1104" height="358" fill="url(#scan)"/>
+
+  <path d="M48 124H1152" stroke="#263d52"/>
+  <circle cx="79" cy="101" r="7" fill="#ff6b72"/><circle cx="103" cy="101" r="7" fill="#f4c95d"/><circle cx="127" cy="101" r="7" fill="#4ad69a"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="86" y="174" fill="#49ddff" font-size="30">adham@ai-core:~$ <tspan fill="#eaf7ff">whoami</tspan></text>
+    <text x="112" y="224" fill="#d9e8f1" font-size="35" font-weight="700">&gt; AI Engineer // Egypt</text>
+    <text x="112" y="270" fill="#9bb1c3" font-size="28">&gt; Computer Vision · RAG · LLM Systems</text>
+    <text x="112" y="312" fill="#9bb1c3" font-size="28">&gt; Intelligent Applications</text>
+
+    <text x="86" y="365" fill="#49ddff" font-size="30">adham@ai-core:~$ <tspan fill="#eaf7ff">approach</tspan></text>
+    <text x="112" y="414" fill="#d9e8f1" font-size="29" font-weight="650">DATA → MODEL → EVALUATE → SERVE → PRODUCT → ITERATE</text>
+  </g>
+
+  <path d="M112 438H1088" stroke="url(#edge)" stroke-opacity="0.55"/>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">AI engineering pipeline</title>
+  <desc id="desc">A six-stage pipeline flows from data to model, evaluation, serving, product, and iteration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050a13"/>
+      <stop offset="1" stop-color="#0a192a"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1b2b"/>
+      <stop offset="1" stop-color="#10283c"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#35dcff"/>
+      <stop offset="1" stop-color="#637cff"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#7fdaf2" stroke-opacity="0.04"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0L10 5L0 10Z" fill="#47d9ff"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="560" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="560" rx="24" fill="url(#grid)"/>
+  <text x="54" y="53" fill="#49ddff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="4">ENGINEERING PIPELINE // SYSTEMS, NOT ISOLATED MODELS</text>
+  <path d="M54 72H1146" stroke="#27475d"/>
+
+  <!-- Flow: top row left-to-right, then bottom row right-to-left. -->
+  <g fill="none" stroke="url(#line)" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M350 163H432"/>
+    <path d="M740 163H822"/>
+    <path d="M990 220V302"/>
+    <path d="M840 373H758"/>
+    <path d="M450 373H368"/>
+  </g>
+  <g fill="#48ddff">
+    <circle cx="390" cy="163" r="5"/><circle cx="780" cy="163" r="5"/>
+    <circle cx="990" cy="260" r="5"/><circle cx="800" cy="373" r="5"/><circle cx="410" cy="373" r="5"/>
+  </g>
+
+  <!-- Six pseudo-3D process chambers. -->
+  <g>
+    <g transform="translate(52 104)">
+      <path d="M12 14H286L298 26V126H12L0 114V26Z" fill="#050b14" stroke="#1d394d"/>
+      <path d="M0 0H274L286 12V112H0Z" fill="url(#node)" stroke="#39d9ff" stroke-opacity="0.72" stroke-width="2"/>
+      <text x="24" y="31" fill="#617f95" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">01 // INPUT</text>
+      <text x="143" y="75" fill="#f1f8fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">DATA</text>
+      <text x="143" y="101" fill="#8fa9bb" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" text-anchor="middle">CURATE · PREPARE</text>
+    </g>
+    <g transform="translate(442 104)">
+      <path d="M12 14H286L298 26V126H12L0 114V26Z" fill="#050b14" stroke="#1d394d"/>
+      <path d="M0 0H274L286 12V112H0Z" fill="url(#node)" stroke="#4bc9ff" stroke-opacity="0.72" stroke-width="2"/>
+      <text x="24" y="31" fill="#617f95" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">02 // CORE</text>
+      <text x="143" y="75" fill="#f1f8fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">MODEL</text>
+      <text x="143" y="101" fill="#8fa9bb" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" text-anchor="middle">TRAIN · RETRIEVE</text>
+    </g>
+    <g transform="translate(832 104)">
+      <path d="M12 14H286L298 26V126H12L0 114V26Z" fill="#050b14" stroke="#1d394d"/>
+      <path d="M0 0H274L286 12V112H0Z" fill="url(#node)" stroke="#687eff" stroke-opacity="0.72" stroke-width="2"/>
+      <text x="24" y="31" fill="#617f95" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">03 // PROOF</text>
+      <text x="143" y="75" fill="#f1f8fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">EVALUATE</text>
+      <text x="143" y="101" fill="#8fa9bb" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" text-anchor="middle">MEASURE · FAIL</text>
+    </g>
+
+    <g transform="translate(832 314)">
+      <path d="M12 14H286L298 26V126H12L0 114V26Z" fill="#050b14" stroke="#1d394d"/>
+      <path d="M0 0H274L286 12V112H0Z" fill="url(#node)" stroke="#687eff" stroke-opacity="0.72" stroke-width="2"/>
+      <text x="24" y="31" fill="#617f95" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">04 // DELIVERY</text>
+      <text x="143" y="75" fill="#f1f8fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">SERVE</text>
+      <text x="143" y="101" fill="#8fa9bb" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" text-anchor="middle">API · INFERENCE</text>
+    </g>
+    <g transform="translate(442 314)">
+      <path d="M12 14H286L298 26V126H12L0 114V26Z" fill="#050b14" stroke="#1d394d"/>
+      <path d="M0 0H274L286 12V112H0Z" fill="url(#node)" stroke="#4bc9ff" stroke-opacity="0.72" stroke-width="2"/>
+      <text x="24" y="31" fill="#617f95" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">05 // EXPERIENCE</text>
+      <text x="143" y="75" fill="#f1f8fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">PRODUCT</text>
+      <text x="143" y="101" fill="#8fa9bb" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" text-anchor="middle">INTERFACE · WORKFLOW</text>
+    </g>
+    <g transform="translate(52 314)">
+      <path d="M12 14H286L298 26V126H12L0 114V26Z" fill="#050b14" stroke="#1d394d"/>
+      <path d="M0 0H274L286 12V112H0Z" fill="url(#node)" stroke="#39d9ff" stroke-opacity="0.72" stroke-width="2"/>
+      <text x="24" y="31" fill="#617f95" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">06 // LOOP</text>
+      <text x="143" y="75" fill="#f1f8fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">ITERATE</text>
+      <text x="143" y="101" fill="#8fa9bb" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" text-anchor="middle">OBSERVE · IMPROVE</text>
+    </g>
+  </g>
+
+  <path d="M54 490H1146" stroke="#27475d"/>
+  <text x="600" y="524" fill="#6c879a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" text-anchor="middle" letter-spacing="3">MODEL VALUE BEGINS AFTER THE NOTEBOOK</text>
+</svg>

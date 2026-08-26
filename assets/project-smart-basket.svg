@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
+  <title id="title">Smart Basket project card</title>
+  <desc id="desc">A computer vision retail system using YOLO, ONNX, Raspberry Pi 5, Firebase, and Flutter, with validated mAP metrics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050b14"/><stop offset="1" stop-color="#0c2032"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#31dcff"/><stop offset="1" stop-color="#5e83ff"/></linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#8edff4" stroke-opacity="0.04"/></pattern>
+  </defs>
+  <rect width="1200" height="380" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="380" rx="22" fill="url(#grid)"/>
+  <path d="M24 24H1176V356H24Z" fill="none" stroke="#32516a"/>
+  <path d="M24 24H438" stroke="url(#accent)" stroke-width="3"/>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="52" y="62" fill="#7d9aae" font-size="18" letter-spacing="2">PROJECT // 01 · EDGE VISION</text>
+    <text x="52" y="116" fill="#f1f8fc" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="49" font-weight="750">SMART BASKET</text>
+    <text x="54" y="150" fill="#6fddf5" font-size="21" letter-spacing="1.5">SYSTEM // COMPUTER VISION RETAIL AUTOMATION</text>
+  </g>
+
+  <g transform="translate(54 190)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <g><rect width="146" height="58" rx="5" fill="#0e2132" stroke="#2f7189"/><text x="73" y="36" fill="#e3f3f8" font-size="18" text-anchor="middle">DETECT</text></g>
+    <path d="M155 29H189" stroke="#42dfff" stroke-width="2"/><path d="M184 23L192 29L184 35" fill="none" stroke="#42dfff" stroke-width="2"/>
+    <g transform="translate(198)"><rect width="146" height="58" rx="5" fill="#0e2132" stroke="#2f7189"/><text x="73" y="36" fill="#e3f3f8" font-size="18" text-anchor="middle">VALIDATE</text></g>
+    <path d="M353 29H387" stroke="#42dfff" stroke-width="2"/><path d="M382 23L390 29L382 35" fill="none" stroke="#42dfff" stroke-width="2"/>
+    <g transform="translate(396)"><rect width="146" height="58" rx="5" fill="#0e2132" stroke="#2f7189"/><text x="73" y="36" fill="#e3f3f8" font-size="18" text-anchor="middle">SYNC</text></g>
+    <path d="M551 29H585" stroke="#42dfff" stroke-width="2"/><path d="M580 23L588 29L580 35" fill="none" stroke="#42dfff" stroke-width="2"/>
+    <g transform="translate(594)"><rect width="146" height="58" rx="5" fill="#0e2132" stroke="#2f7189"/><text x="73" y="36" fill="#e3f3f8" font-size="18" text-anchor="middle">APP</text></g>
+  </g>
+
+  <g transform="translate(814 52)">
+    <path d="M18 14H304L322 32V238L304 256H18L0 238V32Z" fill="#07111d" stroke="#4c7792"/>
+    <text x="161" y="48" fill="#8da6b7" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" text-anchor="middle" letter-spacing="1">EVIDENCE // VALIDATION NOTEBOOK</text>
+    <text x="52" y="124" fill="#57e1ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="51" font-weight="750">96.9%</text>
+    <text x="55" y="151" fill="#b4c5d1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19">mAP@0.5</text>
+    <path d="M40 174H282" stroke="#28465d"/>
+    <text x="52" y="227" fill="#8aa7ff" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="43" font-weight="750">84.8%</text>
+    <text x="55" y="250" fill="#b4c5d1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">mAP@0.5:0.95</text>
+  </g>
+
+  <text x="54" y="292" fill="#91a8b9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="21">YOLO26n detection exported to FP32 and INT8 ONNX for edge inference.</text>
+  <path d="M54 316H1146" stroke="#243f53"/>
+  <text x="54" y="344" fill="#7896aa" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="1.5">YOLO26n · OPENCV · ONNX · RASPBERRY PI 5 · FIREBASE · FLUTTER</text>
+</svg>
