@@ -1,21 +1,27 @@
 <div align="center">
 
-<img src="./assets/adham-portrait-float.webp" alt="Adham Elsayed" width="260" />
+<img src="./assets/adham-portrait-final.webp" alt="Adham Elsayed" width="320" />
 
 <img src="./assets/identity-intro.svg" alt="Adham Elsayed — AI Engineer" width="100%" />
 
-<a href="https://adhamelsayedai.github.io/"><img src="./assets/portfolio-link.svg" alt="Portfolio" width="23.5%" /></a>
-<a href="https://www.linkedin.com/in/adham-elsayed-"><img src="./assets/linkedin-link.svg" alt="LinkedIn" width="23.5%" /></a>
-<a href="https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf"><img src="./assets/resume-link.svg" alt="Résumé" width="23.5%" /></a>
-<a href="mailto:adhamelsayed515@gmail.com"><img src="./assets/mail-link.svg" alt="Contact" width="23.5%" /></a>
+<br/>
+
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-7C3AED?style=for-the-badge&logo=githubpages&logoColor=white)](https://adhamelsayedai.github.io/)
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adham-elsayed-)
+[![GitHub](https://img.shields.io/badge/GITHUB-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AdhamElsayedAI)
+[![Résumé](https://img.shields.io/badge/RÉSUMÉ-16A34A?style=for-the-badge&logo=readme&logoColor=white)](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf)
+
+<sub>Computer Vision · Edge AI · RAG / LLM Systems · Model Evaluation</sub>
 
 </div>
 
-## About
+---
+
+## 🧭 About Me
 
 > *Build the model → measure the behavior → connect the architecture → ship the system.*
 
-I'm an **AI Engineer** working across computer vision, edge AI, RAG / LLM systems, model evaluation, and intelligent applications. My strongest work is built around complete systems: the model is one component, while retrieval, validation, inference, APIs, state, and product workflow determine whether the result is actually useful.
+I'm an **AI Engineer** focused on turning models into complete, inspectable systems. My work spans **computer vision, edge deployment, RAG / LLM engineering, model evaluation, APIs, data pipelines, and intelligent applications**.
 
 ```python
 class AdhamElsayed:
@@ -24,13 +30,13 @@ class AdhamElsayed:
 
     focus = [
         "Computer Vision",
+        "Edge AI",
         "RAG / LLM Systems",
         "Model Evaluation",
-        "Edge AI",
         "Intelligent Applications",
     ]
 
-    current_systems = {
+    systems = {
         "Smart Basket": "edge vision + synchronized retail state",
         "MedFlow": "evidence-grounded RAG + safety validation",
         "Code AI Proctor": "visual inference + auditable exam workflow",
@@ -40,20 +46,20 @@ class AdhamElsayed:
 ```
 
 <p align="center">
-  <a href="#featured-systems">Featured Systems</a> ·
-  <a href="#data--machine-learning">Data / ML</a> ·
-  <a href="#technical-stack">Technical Stack</a> ·
-  <a href="#evaluation--evidence">Evidence</a> ·
-  <a href="#current-focus">Current Focus</a>
+  <a href="#-featured-systems"><b>Featured Systems</b></a> ·
+  <a href="#-core-skills"><b>Core Skills</b></a> ·
+  <a href="#-tech-stack"><b>Tech Stack</b></a> ·
+  <a href="#-evaluation--evidence"><b>Evidence</b></a> ·
+  <a href="#-connect-with-me"><b>Contact</b></a>
 </p>
 
 ---
 
-# Featured Systems
+# 🔥 Featured Systems
 
-## 1. Smart Basket — Edge AI Retail System
+## 👁️ 1. Smart Basket — Edge AI Retail System
 
-Real-time retail product recognition running on Raspberry Pi 5, connected to basket-state logic, Firebase synchronization, and a Flutter application.
+Real-time retail product recognition running on **Raspberry Pi 5**, connected to basket-state logic, Firebase synchronization, and a Flutter application.
 
 | | |
 |---|---|
@@ -62,7 +68,7 @@ Real-time retail product recognition running on Raspberry Pi 5, connected to bas
 | **Capability** | Edge product detection + stabilized basket state + mobile synchronization |
 | **Validation** | `mAP@0.5 = 96.89%` · `mAP@0.5:0.95 = 84.79%` |
 
-### System architecture
+### 🏗️ System Architecture
 
 ```mermaid
 flowchart LR
@@ -83,13 +89,13 @@ flowchart LR
 - Firebase updates are written when state changes rather than continuously rewriting identical state.
 - Flutter consumes the synchronized basket state at the application layer.
 
-[Inspect Smart Basket →](https://github.com/AdhamElsayedAI/Smart-Basket)
+[**Inspect Smart Basket →**](https://github.com/AdhamElsayedAI/Smart-Basket)
 
 ---
 
-## 2. MedFlow — Evidence-Grounded Clinical RAG
+## 🩺 2. MedFlow — Evidence-Grounded Clinical RAG
 
-A thyroid-focused clinical AI prototype where retrieval, evidence sufficiency, generation, citation resolution, claim validation, numeric safety, and final policy are separate system layers.
+A thyroid-focused clinical AI prototype where **retrieval, evidence sufficiency, generation, citation resolution, claim validation, numeric safety, and final policy** are separate system layers.
 
 | | |
 |---|---|
@@ -98,7 +104,7 @@ A thyroid-focused clinical AI prototype where retrieval, evidence sufficiency, g
 | **Capability** | Evidence-grounded answers with traceable citations and explicit safety routing |
 | **Retrieval** | `Precision@4 = 53.12%` · `Hit@4 = 87.50%` · `MRR ≈ 0.7031` |
 
-### Runtime architecture
+### 🏗️ Runtime Architecture
 
 ```mermaid
 flowchart TB
@@ -139,7 +145,7 @@ flowchart TB
     POLICY -->|unsafe| SAFE
 ```
 
-### Offline evidence pipeline
+### 📚 Offline Evidence Pipeline
 
 ```mermaid
 flowchart LR
@@ -161,11 +167,11 @@ flowchart LR
 
 > The reported values are **engineering evaluation metrics**, not clinical validation or a medical-accuracy claim.
 
-[Inspect MedFlow →](https://github.com/AdhamElsayedAI/Medflow)
+[**Inspect MedFlow →**](https://github.com/AdhamElsayedAI/Medflow)
 
 ---
 
-## 3. Code AI Proctor — AI Exam Monitoring Platform
+## 🎥 3. Code AI Proctor — AI Exam Monitoring Platform
 
 A self-hosted exam platform connecting webcam inference to organization management, quizzes, incident persistence, teacher review, grading, and student appeals.
 
@@ -176,7 +182,7 @@ A self-hosted exam platform connecting webcam inference to organization manageme
 | **Capability** | Local visual inference connected to an auditable exam workflow |
 | **AI task** | Binary classification: `cheating` vs `normal` |
 
-### Runtime architecture
+### 🏗️ Runtime Architecture
 
 ```mermaid
 flowchart LR
@@ -193,7 +199,7 @@ flowchart LR
     DB --> APPEAL[Student appeal]
 ```
 
-### Platform workflow
+### 🧩 Platform Workflow
 
 ```mermaid
 flowchart TD
@@ -215,11 +221,11 @@ flowchart TD
 - Confirmed incidents are attached to the active quiz attempt and persisted for review.
 - Teacher notifications, acknowledgement, grading, CSV export, and student appeals extend the system beyond inference.
 
-[Inspect Code AI Proctor →](https://github.com/AdhamElsayedAI/code-ai-proctor)
+[**Inspect Code AI Proctor →**](https://github.com/AdhamElsayedAI/code-ai-proctor)
 
 ---
 
-# Data / Machine Learning
+# 📊 Data / Machine Learning
 
 ## 4. Telco Customer Churn — PySpark ML
 
@@ -245,7 +251,7 @@ flowchart LR
     EVAL --> CM[Confusion matrix]
 ```
 
-[Inspect Telco Churn →](https://github.com/AdhamElsayedAI/Telco-Customer-Churn-Project)
+[**Inspect Telco Churn →**](https://github.com/AdhamElsayedAI/Telco-Customer-Churn-Project)
 
 ---
 
@@ -271,35 +277,88 @@ flowchart LR
     DIST --> VIZ
 ```
 
-[Inspect Student Performance Analysis →](https://github.com/AdhamElsayedAI/Student-Performance-Analysis)
+[**Inspect Student Performance Analysis →**](https://github.com/AdhamElsayedAI/Student-Performance-Analysis)
 
 ---
 
-# Technical Stack
+# 🚀 Core Skills
 
-### Core AI / ML
+<div align="center">
 
-`Python` · `PyTorch` · `TensorFlow` · `Scikit-learn` · `YOLO`
+![Artificial Intelligence](https://img.shields.io/badge/ARTIFICIAL_INTELLIGENCE-F97316?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Computer Vision](https://img.shields.io/badge/COMPUTER_VISION-2563EB?style=for-the-badge&logo=opencv&logoColor=white)
+![Edge AI](https://img.shields.io/badge/EDGE_AI-7C3AED?style=for-the-badge&logo=raspberrypi&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/MACHINE_LEARNING-16A34A?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![RAG LLM Systems](https://img.shields.io/badge/RAG_%2F_LLM_SYSTEMS-0891B2?style=for-the-badge&logo=huggingface&logoColor=white)
+![Model Evaluation](https://img.shields.io/badge/MODEL_EVALUATION-DC2626?style=for-the-badge&logo=pytest&logoColor=white)
 
-### Computer Vision / Edge
-
-`OpenCV` · `ONNX Runtime` · `Raspberry Pi 5` · `Pi Camera`
-
-### RAG / LLM
-
-`BGE Embeddings` · `ChromaDB` · `BM25` · `RRF` · `Grounded Generation` · `Citation Resolution` · `Claim Validation` · `Numeric Safety` · `Guardrails`
-
-### Backend / Data
-
-`FastAPI` · `REST APIs` · `SQLAlchemy` · `Firebase` · `PySpark` · `Spark MLlib` · `Pandas` · `SQLite / SQL`
-
-### Application Layer
-
-`HTML` · `CSS` · `JavaScript` · `Flutter`
+</div>
 
 ---
 
-# Engineering Principles
+# 🛠️ Tech Stack
+
+### Programming
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=111827)
+![Java](https://img.shields.io/badge/JAVA-EA4335?style=for-the-badge&logo=openjdk&logoColor=white)
+![Dart](https://img.shields.io/badge/DART-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![MATLAB](https://img.shields.io/badge/MATLAB-EF6C00?style=for-the-badge&logo=mathworks&logoColor=white)
+
+</div>
+
+### AI · Vision · ML
+
+<div align="center">
+
+![PyTorch](https://img.shields.io/badge/PYTORCH-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TENSORFLOW-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/KERAS-D00000?style=for-the-badge&logo=keras&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OPENCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX-005CED?style=for-the-badge&logo=onnx&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/SCIKIT--LEARN-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/HUGGING_FACE-FFD21E?style=for-the-badge&logo=huggingface&logoColor=111827)
+![MLflow](https://img.shields.io/badge/MLFLOW-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
+
+</div>
+
+### Edge · Cloud · Applications
+
+<div align="center">
+
+![Raspberry Pi](https://img.shields.io/badge/RASPBERRY_PI-A22846?style=for-the-badge&logo=raspberrypi&logoColor=white)
+![Arduino](https://img.shields.io/badge/ARDUINO-00878F?style=for-the-badge&logo=arduino&logoColor=white)
+![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white)
+![Flutter](https://img.shields.io/badge/FLUTTER-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Firebase](https://img.shields.io/badge/FIREBASE-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FASTAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Azure AI](https://img.shields.io/badge/AZURE_AI-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![Supabase](https://img.shields.io/badge/SUPABASE-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
+
+</div>
+
+### Data · Backend · DevOps
+
+<div align="center">
+
+![Pandas](https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![PySpark](https://img.shields.io/badge/PYSPARK-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLITE-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![Docker](https://img.shields.io/badge/DOCKER-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)
+![Linux](https://img.shields.io/badge/LINUX-FCC624?style=for-the-badge&logo=linux&logoColor=111827)
+![VS Code](https://img.shields.io/badge/VS_CODE-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+
+</div>
+
+---
+
+# 📐 Engineering Principles
 
 ```text
 01  Understand the failure mode before adding complexity.
@@ -312,7 +371,7 @@ flowchart LR
 
 ---
 
-# Evaluation & Evidence
+# 📈 Evaluation & Evidence
 
 | Project | Measured / inspectable evidence |
 |---|---|
@@ -324,16 +383,17 @@ flowchart LR
 
 ---
 
-# Background
+# 🎓 Background
 
 | | |
 |---|---|
-| **Education** | B.Sc. Artificial Intelligence Engineering — Mansoura University |
-| **Training** | Digital Egypt Pioneers Initiative — Microsoft AI & Data Science / Machine Learning Engineering track |
-| **Location** | Egypt |
+| **Education** | B.Sc. Artificial Intelligence Engineering — Mansoura University · Sep 2023 – Expected Feb 2027 |
+| **Academic standing** | GPA `3.13 / 4.00` · Grade `B+` |
+| **Training** | Digital Egypt Pioneers Initiative — Microsoft AI & Data Science / Machine Learning Engineering · Sep 2025 – Jul 2026 |
+| **Location** | Egypt 🇪🇬 |
 
 <details>
-<summary><b>GitHub activity</b></summary>
+<summary><b>📊 GitHub activity</b></summary>
 <br/>
 <div align="center">
 <img height="165" src="https://github-readme-stats.vercel.app/api?username=AdhamElsayedAI&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=false" alt="GitHub stats" />
@@ -343,7 +403,7 @@ flowchart LR
 
 ---
 
-# Current Focus
+# 🎯 Current Focus
 
 - **Computer Vision & Edge AI** — detection / classification, efficient local inference, model-to-device integration.
 - **RAG / LLM Systems** — retrieval quality, evidence sufficiency, grounding, citation and claim validation.
@@ -352,11 +412,18 @@ flowchart LR
 
 ---
 
+# 🤝 Connect With Me
+
 <div align="center">
 
-**Adham Elsayed** · AI Engineer · Egypt
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adham-elsayed-)
+[![GitHub](https://img.shields.io/badge/GITHUB-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/AdhamElsayedAI)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-7C3AED?style=for-the-badge&logo=githubpages&logoColor=white)](https://adhamelsayedai.github.io/)
+[![Email](https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:adhamelsayed515@gmail.com)
 
-[Portfolio](https://adhamelsayedai.github.io/) · [LinkedIn](https://www.linkedin.com/in/adham-elsayed-) · [Résumé](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf) · [Email](mailto:adhamelsayed515@gmail.com)
+<br/>
+
+**Adham Elsayed** · AI Engineer · Egypt 🇪🇬
 
 <sub>Build the model · Measure the behavior · Ship the system</sub>
 
