@@ -1,43 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="185" viewBox="0 0 1120 185" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="t d">
 <title id="t">Adham Elsayed — AI Engineer</title>
-<desc id="d">A restrained macOS-inspired glass identity strip with a subtle animated name reveal.</desc>
+<desc id="d">A transparent portrait enters into a restrained macOS-inspired glass composition, followed by a subtle name reveal.</desc>
 <defs>
   <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#ffffff" stop-opacity=".075"/>
-    <stop offset=".45" stop-color="#ffffff" stop-opacity=".025"/>
-    <stop offset="1" stop-color="#58a6ff" stop-opacity=".045"/>
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".085"/>
+    <stop offset=".48" stop-color="#ffffff" stop-opacity=".025"/>
+    <stop offset="1" stop-color="#58a6ff" stop-opacity=".04"/>
   </linearGradient>
-  <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#58a6ff" stop-opacity="0"/>
-    <stop offset=".5" stop-color="#58a6ff" stop-opacity=".8"/>
-    <stop offset="1" stop-color="#58a6ff" stop-opacity="0"/>
+  <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".20"/>
+    <stop offset=".55" stop-color="#ffffff" stop-opacity=".05"/>
+    <stop offset="1" stop-color="#58a6ff" stop-opacity=".18"/>
   </linearGradient>
-  <filter id="shadow" x="-20%" y="-40%" width="140%" height="180%">
-    <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity=".30"/>
-  </filter>
-  <clipPath id="reveal"><rect x="210" y="28" width="0" height="70"><animate attributeName="width" values="0;700" dur=".95s" begin=".25s" fill="freeze"/></rect></clipPath>
+  <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#58a6ff" stop-opacity="0"/><stop offset=".5" stop-color="#58a6ff" stop-opacity=".72"/><stop offset="1" stop-color="#58a6ff" stop-opacity="0"/></linearGradient>
+  <radialGradient id="halo"><stop stop-color="#58a6ff" stop-opacity=".16"/><stop offset="1" stop-color="#58a6ff" stop-opacity="0"/></radialGradient>
+  <filter id="shadow" x="-50%" y="-50%" width="200%" height="220%"><feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity=".38"/></filter>
+  <clipPath id="reveal"><rect x="170" y="265" width="0" height="76"><animate attributeName="width" values="0;780" dur=".95s" begin=".55s" fill="freeze"/></rect></clipPath>
 </defs>
+
+<ellipse cx="560" cy="150" rx="190" ry="116" fill="url(#halo)"><animate attributeName="opacity" values=".45;.8;.45" dur="7s" repeatCount="indefinite"/></ellipse>
+
 <g opacity="0" filter="url(#shadow)">
-  <animate attributeName="opacity" values="0;1" dur=".5s" begin=".05s" fill="freeze"/>
-  <animateTransform attributeName="transform" type="translate" values="0 8;0 0" dur=".65s" begin=".05s" fill="freeze"/>
-  <rect x="154" y="10" width="812" height="164" rx="28" fill="url(#glass)" stroke="#ffffff" stroke-opacity=".10"/>
-  <path d="M184 36H936" stroke="#ffffff" stroke-opacity=".055"/>
-  <circle cx="184" cy="27" r="4" fill="#ff5f57" opacity=".72"/>
-  <circle cx="198" cy="27" r="4" fill="#febc2e" opacity=".72"/>
-  <circle cx="212" cy="27" r="4" fill="#28c840" opacity=".72"/>
+  <animate attributeName="opacity" values="0;1" dur=".55s" begin=".05s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0 -24;0 0" dur=".8s" begin=".05s" fill="freeze"/>
+  <rect x="416" y="18" width="288" height="244" rx="46" fill="#0d1117" fill-opacity=".56" stroke="url(#edge)" transform="rotate(-3 560 140)"/>
+  <rect x="428" y="27" width="264" height="232" rx="42" fill="url(#glass)" stroke="#ffffff" stroke-opacity=".10" transform="rotate(2 560 140)">
+    <animateTransform attributeName="transform" type="rotate" values="2 560 140;.5 560 140;2 560 140" dur="8s" begin="1s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="454" cy="51" r="4" fill="#ff5f57" opacity=".7"/><circle cx="468" cy="51" r="4" fill="#febc2e" opacity=".7"/><circle cx="482" cy="51" r="4" fill="#28c840" opacity=".7"/>
+  <path d="M448 69H672" stroke="#ffffff" stroke-opacity=".055"/>
 </g>
-<g clip-path="url(#reveal)">
-  <text x="560" y="86" text-anchor="middle" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="54" font-weight="720" letter-spacing="12">ADHAM ELSAYED
-    <animate attributeName="letter-spacing" values="12;3.2" dur=".95s" begin=".25s" fill="freeze"/>
-  </text>
-</g>
-<rect x="560" y="104" width="0" height="2" rx="1" fill="url(#line)">
-  <animate attributeName="x" values="560;370" dur=".65s" begin=".95s" fill="freeze"/>
-  <animate attributeName="width" values="0;380" dur=".65s" begin=".95s" fill="freeze"/>
-</rect>
+
 <g opacity="0">
-  <animate attributeName="opacity" values="0;1" dur=".5s" begin="1.15s" fill="freeze"/>
-  <text x="560" y="137" text-anchor="middle" fill="#c9d1d9" font-family="SFMono-Regular,Consolas,monospace" font-size="17" font-weight="600" letter-spacing="2.4">AI ENGINEER</text>
-  <text x="560" y="160" text-anchor="middle" fill="#8b949e" font-family="SFMono-Regular,Consolas,monospace" font-size="12.5">Computer Vision · RAG / LLM Systems · Edge AI · Evaluation</text>
+  <animate attributeName="opacity" values="0;1" dur=".6s" begin=".14s" fill="freeze"/>
+  <animateTransform attributeName="transform" type="translate" values="0 -36;0 0" dur="1s" begin=".14s" fill="freeze"/>
+  <image href="https://raw.githubusercontent.com/AdhamElsayedAI/AdhamElsayedAI/profile-2026-premium-native/assets/adham-cutout.webp" x="440" y="25" width="240" height="240" preserveAspectRatio="xMidYMid meet"/>
+  <animateTransform attributeName="transform" additive="sum" type="translate" values="0 0;0 -3;0 0" dur="6.5s" begin="1.2s" repeatCount="indefinite"/>
 </g>
+
+<g clip-path="url(#reveal)">
+  <text x="560" y="326" text-anchor="middle" fill="#f0f6fc" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" font-size="58" font-weight="720" letter-spacing="13">ADHAM ELSAYED<animate attributeName="letter-spacing" values="13;3.2" dur=".95s" begin=".55s" fill="freeze"/></text>
+</g>
+<rect x="560" y="344" width="0" height="2" rx="1" fill="url(#line)"><animate attributeName="x" values="560;382" dur=".65s" begin="1.25s" fill="freeze"/><animate attributeName="width" values="0;356" dur=".65s" begin="1.25s" fill="freeze"/></rect>
+<g opacity="0"><animate attributeName="opacity" values="0;1" dur=".5s" begin="1.45s" fill="freeze"/><text x="560" y="378" text-anchor="middle" fill="#c9d1d9" font-family="SFMono-Regular,Consolas,monospace" font-size="17" font-weight="600" letter-spacing="2.2">AI ENGINEER</text><text x="560" y="406" text-anchor="middle" fill="#8b949e" font-family="SFMono-Regular,Consolas,monospace" font-size="12.5">Computer Vision · RAG / LLM Systems · Edge AI · Evaluation</text></g>
 </svg>
