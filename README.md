@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/adham-portrait-final.webp" alt="Adham Elsayed" width="320" />
+<img src="./assets/adham-profile.png" alt="Adham Elsayed" width="260" />
 
 <img src="./assets/identity-intro.svg" alt="Adham Elsayed — AI Engineer" width="100%" />
 
