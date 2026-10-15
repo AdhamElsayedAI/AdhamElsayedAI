@@ -1,91 +1,152 @@
 <div align="center">
 
-<img src="./assets/adham-profile-framed.png" alt="Adham Elsayed" width="155" />
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/profile-header-mobile-dark.svg" />
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="./assets/profile-header-mobile-light.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-header-light.svg" />
+  <img src="./assets/profile-header-dark.svg" alt="Adham Elsayed — AI Engineer: Generative AI, RAG, computer vision and edge deployment" width="100%" />
+</picture>
 
-# Adham Elsayed
+<br />
 
-**AI Engineer · Generative AI & RAG · Computer Vision & Edge AI**
+<img src="./assets/adham-profile-framed.png" width="142" alt="Adham Elsayed — portrait" />
 
-I engineer AI systems that can be **measured, inspected, and integrated into real workflows** — from data and model evaluation to inference, APIs, and product delivery.
+### AI Engineer · Generative AI & RAG · Computer Vision & Edge AI
 
-[**Portfolio ↗**](https://adhamelsayedai.github.io/) &nbsp;·&nbsp; [**Projects ↗**](#selected-projects) &nbsp;·&nbsp; [**Résumé ↗**](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf) &nbsp;·&nbsp; [**LinkedIn ↗**](https://www.linkedin.com/in/adham-elsayed-/) &nbsp;·&nbsp; [**Email ↗**](mailto:adhamelsayed515@gmail.com)
+**I build AI systems that can explain where their answers came from, show how they were evaluated, and run beyond a notebook.**
+
+[**Portfolio ↗**](https://adhamelsayedai.github.io/) &nbsp;·&nbsp; [**Résumé ↗**](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf) &nbsp;·&nbsp; [**LinkedIn ↗**](https://www.linkedin.com/in/adham-elsayed-/) &nbsp;·&nbsp; [**Contact ↗**](mailto:adhamelsayed515@gmail.com)
 
 </div>
 
 ---
 
-## What I build
+## At a glance
 
-I work across **evidence-grounded LLM applications**, **computer vision**, and **edge inference**. My focus is not just getting a model to respond: it is deciding how to evaluate it, handle uncertainty, connect it to a backend, and make its behavior observable.
+I'm an **AI Engineering student at Mansoura University, Egypt**, building practical systems across **LLM/RAG engineering, computer vision, model evaluation, and deployment**. I work from data preparation and model behavior through APIs, interfaces, and the guardrails needed to use the system responsibly.
 
-| Focus | Engineering practice |
+| What I work on | What that looks like in practice |
 | :--- | :--- |
-| **Generative AI & RAG** | Dense and sparse retrieval, evidence gating, source citations, answer validation, safe abstention |
-| **Computer Vision & Edge AI** | YOLO detection/classification, OpenCV, ONNX inference, Raspberry Pi integration |
-| **AI Product Engineering** | FastAPI services, data pipelines, model evaluation, audit trails, deployment-oriented workflows |
+| **Generative AI / RAG** | Hybrid retrieval, embeddings, citations, evidence sufficiency, abstention and claim checks |
+| **Computer Vision / Edge** | YOLO training and evaluation, OpenCV pipelines, ONNX inference, Raspberry Pi integration |
+| **AI Systems Engineering** | FastAPI backends, reproducible experiments, data workflows, deployment and observability |
 
-## Selected projects
+## Featured engineering work
 
-### 01 / MedFlow — Evidence-Grounded Clinical RAG
+### 01 — MedFlow · Evidence-Grounded Clinical RAG
 
-**Team project · 2nd place, AI Hackathon Mansoura 2026**
+<sub>GENERATIVE AI &nbsp; / &nbsp; RETRIEVAL &nbsp; / &nbsp; SAFETY ENGINEERING</sub>
 
-A thyroid-focused clinical AI prototype that retrieves supporting evidence before generation, resolves citations to sources, checks claims and high-risk numeric information, and can **answer, caution, abstain, or redirect** when appropriate.
+<a href="https://adhamelsayedai.github.io/#projects">
+  <img src="https://adhamelsayedai.github.io/images/medflow/rag-chat.png" alt="Authentic MedFlow clinical RAG interface with retrieved evidence and citations" width="780" />
+</a>
 
-**Measured engineering evidence**
+MedFlow is a **team-built thyroid-focused clinical AI prototype**. Rather than let a language model generate without constraints, the system retrieves medical evidence, checks sufficiency, resolves citations and validates claims before choosing to **answer, caution, abstain or redirect**.
 
-- **87.50% Hit@4** and **0.7031 MRR** on a documented **16-question** retrieval benchmark.
-- **100% citation-ID validity** and **zero fabricated citations** across a **7-case** grounded-generation evaluation.
+**Measured results** (internal engineering evaluations):
 
-These are *internal retrieval and grounding results*, **not clinical accuracy or medical-device validation**. The primary engineering repository remains private.
+| Evaluation | Result | Scope |
+| :--- | ---: | :--- |
+| **Retrieval Hit@4** | **87.50%** | 16 ground-truth questions |
+| **Mean reciprocal rank** | **0.7031** | Same frozen retrieval benchmark |
+| **Citation ID validity** | **100%** | 7-case grounded generation evaluation |
+| **Fabricated citations** | **0** | Same 7 evaluation cases |
 
-[**Explore the MedFlow case study ↗**](https://adhamelsayedai.github.io/#projects)
+**My engineering focus:** evidence retrieval, retrieval evaluation, grounding, validation and safer response behavior. The project received **2nd place at AI Hackathon Mansoura 2026** as a team achievement.
 
-### 02 / Smart Basket — Computer Vision on the Edge
+> These results measure retrieval and citation behavior on limited test sets — **not clinical accuracy**. The primary MedFlow engineering repository remains private.
 
-A camera-assisted retail basket that uses **YOLO** to detect four product classes, runs inference with **ONNX Runtime on Raspberry Pi 5**, and synchronizes basket state with a **Flutter / Firebase** application.
+**[Explore the MedFlow case study →](https://adhamelsayedai.github.io/#projects)**
 
-**Project-reported object-detection evaluation:** **96.89% mAP@0.5** · **84.79% mAP@0.5:0.95**.
+<details>
+<summary><b>See the RAG engineering workflow</b></summary>
 
-**Stack:** Python · YOLO · OpenCV · ONNX · Raspberry Pi 5 · Firebase · Flutter
+```mermaid
+flowchart LR
+    A[Clinical question] --> B[Risk checks]
+    B --> C[Dense + sparse retrieval]
+    C --> D[Evidence sufficiency]
+    D --> E[Grounded generation]
+    E --> F[Citation + claim validation]
+    F --> G{Answer / caution / abstain / redirect}
+```
 
-[**View Smart Basket repository ↗**](https://github.com/AdhamElsayedAI/Smart-Basket)
+The frozen 16-question retrieval benchmark and the separate 7-case grounded-generation evaluation measure different parts of the system; neither is a medical-device validation.
 
-### 03 / Code AI Proctor — Auditable Exam Monitoring
+</details>
 
-A self-hosted proctoring prototype connecting **YOLO webcam-frame classification** (cheating / normal) with configurable alerts, evidence capture, and teacher review. The wider platform includes **organization, teacher, and student** workflows.
+---
 
-**Engineering emphasis:** temporal prediction handling · FastAPI · optional SQL persistence · incident history · student appeals.
+### 02 — Smart Basket · Edge AI Retail System
 
-No model-accuracy percentage is claimed without a reproducible evaluation report.
+<sub>COMPUTER VISION &nbsp; / &nbsp; EDGE INFERENCE &nbsp; / &nbsp; PRODUCT INTEGRATION</sub>
 
-[**View Code AI Proctor repository ↗**](https://github.com/AdhamElsayedAI/code-ai-proctor)
+<a href="https://github.com/AdhamElsayedAI/Smart-Basket">
+  <img src="https://adhamelsayedai.github.io/images/smart-basket/vision-checkout-hero.webp" alt="Smart Basket concept illustration showing a camera-equipped shopping basket, Raspberry Pi and mobile checkout app" width="780" />
+</a>
+
+A vision-assisted checkout prototype combining **four-class YOLO product detection**, **ONNX Runtime on Raspberry Pi 5** and basket-state synchronization through **Firebase to a Flutter mobile app**.
+
+**Project-reported object detection:** **96.89% mAP@0.5** · **84.79% mAP@0.5:0.95**.
+
+**Engineering path:** camera → OpenCV / YOLO → ONNX on Raspberry Pi → basket state → Firebase → Flutter.
+
+**[Explore source code →](https://github.com/AdhamElsayedAI/Smart-Basket)**
+
+<sub>Artwork above is a concept illustration; project metrics refer to model evaluation, not an end-to-end checkout accuracy guarantee.</sub>
 
 ---
 
-## How I approach AI engineering
+### 03 — Code AI Proctor · Auditable Exam Monitoring
 
-1. **Ground the problem.** Understand the data, task, constraints, and failure modes.
-2. **Measure what matters.** Separate retrieval, prediction quality, grounding, latency, and product behavior.
-3. **Engineer the boundaries.** Validate inputs and outputs, preserve evidence, and handle unsupported cases explicitly.
-4. **Deliver the system.** Connect inference to APIs, interfaces, observability, and realistic deployment constraints.
+<sub>COMPUTER VISION &nbsp; / &nbsp; FASTAPI &nbsp; / &nbsp; MONITORING WORKFLOWS</sub>
 
-### Core toolkit
+<a href="https://github.com/AdhamElsayedAI/code-ai-proctor">
+  <img src="https://adhamelsayedai.github.io/images/code-ai-proctor/monitoring-dashboard.webp" alt="Code AI Proctor concept illustration of the exam monitoring dashboard and alert workflow" width="780" />
+</a>
 
-**AI / Retrieval:** Python · PyTorch · YOLO · OpenCV · BGE embeddings · BM25 · RRF · ChromaDB
+A self-hosted proctoring prototype that connects **webcam-frame classification** to configurable alerts, captured incident evidence and teacher review — within organization, teacher and student portals.
 
-**Backend / Edge:** FastAPI · REST APIs · ONNX Runtime · Raspberry Pi · Docker · SQL
+**System signals:** **2 classification classes** (cheating / normal) · **3 role-based portals** · auditable incident workflow. Built with **YOLO, PyTorch, FastAPI and optional SQL persistence**.
 
-**Product / Integration:** Flutter · Firebase · Git / GitHub · evaluation pipelines
+**[Explore source code →](https://github.com/AdhamElsayedAI/code-ai-proctor)**
+
+<sub>Artwork above is a concept illustration. No unsupported model-accuracy or production-readiness figures are claimed.</sub>
 
 ---
+
+## Technical toolkit
+
+| Domain | Tools & approaches |
+| :--- | :--- |
+| **AI / ML** | Python · PyTorch · Ultralytics YOLO · Scikit-learn · model evaluation |
+| **RAG / LLMs** | BGE · BM25 · RRF · ChromaDB · grounded generation · citation validation |
+| **Computer vision / Edge** | OpenCV · ONNX Runtime · Raspberry Pi 5 |
+| **Backend / Integration** | FastAPI · REST APIs · SQL · Firebase · Flutter · Docker · Git |
+
+### How I work
+
+```text
+Understand the problem → Build a baseline → Evaluate failures
+        ↓
+Improve the model and evidence path → Add safety checks
+        ↓
+Expose an API → Integrate the product → Measure again
+```
+
+I care about **traceable decisions, honest metrics, practical deployment and useful product behavior** — not just a demo that looks convincing.
 
 ## Background & contact
 
-**AI Engineering student — Mansoura University, Egypt.**
+**Education:** B.Sc. AI Engineering, Mansoura University *(in progress)*.  
+**Location:** Egypt.  
+**Interests:** Generative AI, retrieval systems, model evaluation, edge inference, AI-powered software products.
 
-Interested in building useful, verifiable AI systems and collaborating on engineering challenges involving RAG, computer vision, and deployed AI.
+<div align="center">
 
-**[Portfolio](https://adhamelsayedai.github.io/)** · **[LinkedIn](https://www.linkedin.com/in/adham-elsayed-/)** · **[Email](mailto:adhamelsayed515@gmail.com)**
+**[Portfolio](https://adhamelsayedai.github.io/)** &nbsp;·&nbsp; **[GitHub](https://github.com/AdhamElsayedAI)** &nbsp;·&nbsp; **[LinkedIn](https://www.linkedin.com/in/adham-elsayed-/)** &nbsp;·&nbsp; **[Email](mailto:adhamelsayed515@gmail.com)**
 
-<sub>Engineering results above come from project-specific evaluations and should not be interpreted as performance guarantees outside those test conditions.</sub>
+<sub>Built around evidence, evaluation and engineering clarity. All project figures are tied to their stated test context.</sub>
+
+</div>
