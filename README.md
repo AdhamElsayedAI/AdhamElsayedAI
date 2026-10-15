@@ -39,8 +39,10 @@ I'm an **AI Engineering student at Mansoura University, Egypt**, building practi
 <sub>GENERATIVE AI &nbsp; / &nbsp; RETRIEVAL &nbsp; / &nbsp; SAFETY ENGINEERING</sub>
 
 <a href="https://adhamelsayedai.github.io/#projects">
-  <img src="https://adhamelsayedai.github.io/images/medflow/rag-chat.png" alt="Authentic MedFlow clinical RAG interface with retrieved evidence and citations" width="780" />
+  <img src="https://adhamelsayedai.github.io/images/medflow/medflow-evidence-hero.webp" alt="MedFlow UI concept visual — evidence-grounded thyroid clinical RAG with source citations" width="780" />
 </a>
+
+<sub>Portfolio UI concept based on the MedFlow workflow. Engineering results below are measured separately.</sub>
 
 MedFlow is a **team-built thyroid-focused clinical AI prototype**. Rather than let a language model generate without constraints, the system retrieves medical evidence, checks sufficiency, resolves citations and validates claims before choosing to **answer, caution, abstain or redirect**.
 
