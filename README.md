@@ -1,71 +1,60 @@
-# Adham Elsayed
-
-**AI Engineer** · Generative AI, retrieval systems & computer vision
-
-I build applied AI systems, from data and model behavior to evaluation, APIs, and the workflows people actually use. Most of my work is around **evidence-grounded LLMs**, **computer vision**, and **getting models to run outside a notebook**.
-
-AI Engineering student at **Mansoura University**, Egypt.
-
-[Portfolio](https://adhamelsayedai.github.io/) · [Résumé](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf) · [LinkedIn](https://www.linkedin.com/in/adham-elsayed-/) · [Email](mailto:adhamelsayed515@gmail.com)
+<div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="./assets/focus-light.svg" />
-  <img src="./assets/focus-dark.svg" width="620" alt="Current focus: retrieval evaluation, computer vision inference and AI product engineering" />
+  <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="./assets/profile-editorial-mobile-light.svg" />
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/profile-editorial-mobile-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/profile-editorial-light.svg" />
+  <img src="./assets/profile-editorial-dark.svg" alt="Adham Elsayed — AI Engineer" width="100%" />
 </picture>
 
-### What I work on
+**AI Engineer · Generative AI · RAG · Computer Vision**
 
-- **LLMs and retrieval:** hybrid search, embeddings, reranking, grounding, citation checks, evaluation and safe fallback behavior.
-- **Computer vision:** YOLO-based detection and classification, OpenCV pipelines, ONNX inference and edge devices.
-- **AI software:** Python services, FastAPI, SQL, testing and integration with web applications.
+Building applied AI systems across evidence-grounded retrieval, model evaluation, computer vision, and backend engineering.
 
-### Selected projects
+[Portfolio](https://adhamelsayedai.github.io/) &nbsp;·&nbsp; [Résumé](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf) &nbsp;·&nbsp; [LinkedIn](https://www.linkedin.com/in/adham-elsayed-/) &nbsp;·&nbsp; [Email](mailto:adhamelsayed515@gmail.com)
 
-**[MedFlow](https://adhamelsayedai.github.io/#projects)** — Evidence-grounded clinical RAG
+</div>
 
-A team-built clinical AI prototype that retrieves supporting material, evaluates evidence sufficiency and validates citations before returning a response. My focus has been the retrieval and evaluation side, including safety-aware response states.
+## About
 
-`Hybrid retrieval · RAG evaluation · Python · FastAPI`
+I'm an **AI Engineering student at Mansoura University**, interested in the engineering required to make models useful: building retrieval pipelines, checking whether answers are supported, connecting models to APIs, and evaluating what fails.
 
-**[AttendanceOS](https://github.com/AdhamElsayedAI/Smart-Attendance-System)** — University attendance
+My main areas of work are **Generative AI and RAG**, **computer vision and edge inference**, and **Python backend development**.
 
-A local, supervised exam-attendance workflow with a React operator interface, FastAPI service, face matching, blink checks and exam-specific SQLite records.
+## Selected projects
 
-`React · TypeScript · FastAPI · OpenCV · dlib`
-
-**[Smart Basket](https://github.com/AdhamElsayedAI/Smart-Basket)** — Vision on edge hardware
-
-An object-detection pipeline for four grocery product categories, with ONNX Runtime inference, a Raspberry Pi camera path and optional Firebase basket-state updates.
-
-`YOLO · ONNX Runtime · Raspberry Pi · Firebase`
-
-**[Code AI Proctor](https://github.com/AdhamElsayedAI/code-ai-proctor)** — Assessment and review platform
-
-A browser-based quiz platform with FastAPI endpoints, image-classification alerts for teacher review and Gemini-assisted feedback using course PDFs. Model alerts are review signals, not proof of misconduct.
-
-`PyTorch · YOLO classification · FastAPI · SQLAlchemy · Gemini`
+| Project | What I built | Stack |
+| :--- | :--- | :--- |
+| **[MedFlow](https://adhamelsayedai.github.io/#projects)** | Evidence-grounded clinical RAG prototype with retrieval evaluation, citation checks, and bounded responses. Team project; my focus is retrieval and grounding. | Python, hybrid retrieval, FastAPI |
+| **[AttendanceOS](https://github.com/AdhamElsayedAI/Smart-Attendance-System)** | Exam-scoped university attendance prototype combining face recognition, blink verification, an operator dashboard, and SQLite records. | React, TypeScript, FastAPI, OpenCV |
+| **[Smart Basket](https://github.com/AdhamElsayedAI/Smart-Basket)** | Camera-based grocery detection, ONNX edge inference, and optional Firebase basket-state synchronization. | YOLO, ONNX, Raspberry Pi, Firebase |
+| **[Code AI Proctor](https://github.com/AdhamElsayedAI/code-ai-proctor)** | Online quiz platform with webcam-classification alerts for teacher review and Gemini-powered study support. | PyTorch, FastAPI, SQLAlchemy, Gemini |
 
 <details>
-<summary>Evaluation notes</summary>
+<summary><strong>Evaluation notes</strong></summary>
 
-MedFlow's internal **16-question retrieval benchmark** reported **Hit@4 of 87.50%** and **MRR of 0.7031**. A separate **seven-case grounding check** reported valid citation IDs across those cases. These results describe limited engineering tests, not clinical accuracy or deployment readiness.
+MedFlow's internal retrieval benchmark reported **Hit@4 of 87.50%** and **MRR of 0.7031** over 16 questions. A separate seven-case evaluation reported valid citation IDs in all seven cases. These are limited engineering evaluations, not clinical-accuracy measurements.
+
+The other prototypes require further hardware and task-specific evaluation before any production-performance claims.
 
 </details>
 
-### Tools I use
+## Technical focus
 
-**Language & backend:** Python, TypeScript, FastAPI, SQL, React
+| Area | Technologies and methods |
+| :--- | :--- |
+| **LLM & retrieval engineering** | RAG, embeddings, BM25, hybrid search, reranking, citation evaluation, grounded generation |
+| **Machine learning & vision** | Python, PyTorch, YOLO, OpenCV, NumPy, ONNX Runtime |
+| **Backend & product integration** | FastAPI, REST APIs, SQL, React, TypeScript, Firebase, Docker, Git |
 
-**ML & vision:** PyTorch, OpenCV, Ultralytics YOLO, NumPy, ONNX Runtime
+## Engineering approach
 
-**Retrieval & systems:** BM25, embeddings, ChromaDB, Docker, Git, Firebase
-
-### How I approach engineering
-
-Start with a baseline. Decide what to measure. Look closely at failure cases. Improve the evidence or model path, then make the system usable and test it again.
-
-I try to keep a clear boundary between **something that works in a demo** and **something that's actually been validated**.
+I start with a baseline and a measurable evaluation, inspect failure cases, then improve the model or evidence pipeline before integrating it into a product. I keep **demo results**, **internal evaluations**, and **production claims** separate.
 
 ---
 
-[**Explore my work**](https://adhamelsayedai.github.io/) · [**View my CV**](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf) · [**Get in touch**](mailto:adhamelsayed515@gmail.com)
+<div align="center">
+
+**[Explore the portfolio](https://adhamelsayedai.github.io/)** &nbsp;·&nbsp; **[View my CV](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf)** &nbsp;·&nbsp; **[Get in touch](mailto:adhamelsayed515@gmail.com)**
+
+</div>
