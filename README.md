@@ -1,7 +1,12 @@
-<picture>
-  <source media="(max-width: 640px)" srcset="./assets/engineering-hero-mobile.svg" />
-  <img src="./assets/engineering-hero.svg" width="100%" alt="Adham Elsayed — AI Engineer. Generative AI, retrieval systems and computer vision, with a subtle animated engineering pipeline." />
-</picture>
+<div align="center">
+  <picture>
+    <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/hero-mobile-dark.svg" />
+    <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="./assets/hero-mobile-light.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg" />
+    <img src="./assets/hero-dark.svg" width="100%" alt="Adham Elsayed — AI Engineer. Retrieval, reranking, evidence verification and backend services." />
+  </picture>
+</div>
 
 <br />
 
@@ -11,7 +16,13 @@ My focus is on the parts that make AI systems trustworthy in practice: the quali
 
 **[Portfolio ↗](https://adhamelsayedai.github.io/)** &nbsp;·&nbsp; **[Résumé ↗](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf)** &nbsp;·&nbsp; **[LinkedIn ↗](https://www.linkedin.com/in/adham-elsayed-/)** &nbsp;·&nbsp; **[Email ↗](mailto:adhamelsayed515@gmail.com)**
 
----
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/divider-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg" />
+  <img src="./assets/divider-dark.svg" width="100%" alt="" />
+</picture>
+
 
 ### What I work on
 
@@ -40,11 +51,23 @@ An educational assessment prototype connecting computer-vision risk signals, ins
 
 ### Tools I use
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg" />
+  <img src="./assets/stack-dark.svg" width="100%" alt="Python, PyTorch, YOLO, OpenCV, ONNX Runtime, FastAPI, Docker, React, TypeScript, Git, Firebase, Raspberry Pi" />
+</picture>
+
 **AI / Retrieval** &nbsp; Python · PyTorch · YOLO · OpenCV · ONNX Runtime · BM25 · Embeddings · RAG evaluation
 
 **Backend / Product** &nbsp; FastAPI · SQL · Docker · React · TypeScript · Git · Firebase
 
----
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/divider-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/divider-light.svg" />
+  <img src="./assets/divider-dark.svg" width="100%" alt="" />
+</picture>
+
 
 I’m especially interested in **AI systems that can be measured, explained, and maintained** — not just demonstrated.
 
