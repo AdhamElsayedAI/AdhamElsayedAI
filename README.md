@@ -1,67 +1,51 @@
-# Adham Elsayed
-
-**AI Engineer**  ·  Generative AI, RAG & Computer Vision
-
-I work on RAG applications, computer vision and the Python services behind them. Most of my effort goes into making the data, model, API and evaluation work together — not just getting a demo to run.
-
-[**Portfolio ↗**](https://adhamelsayedai.github.io/) &nbsp;·&nbsp; [**Résumé ↗**](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf) &nbsp;·&nbsp; [**LinkedIn ↗**](https://www.linkedin.com/in/adham-elsayed-/) &nbsp;·&nbsp; [**Email ↗**](mailto:adhamelsayed515@gmail.com)
-
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="./assets/editorial-rule-light.svg" />
-  <img src="./assets/editorial-rule-dark.svg" width="100%" alt="A subtle animated line" />
+  <source media="(max-width: 640px)" srcset="./assets/engineering-hero-mobile.svg" />
+  <img src="./assets/engineering-hero.svg" width="100%" alt="Adham Elsayed — AI Engineer. Generative AI, retrieval systems and computer vision, with a subtle animated engineering pipeline." />
 </picture>
 
-### Engineering focus
+<br />
 
-**Generative AI & RAG** — Hybrid retrieval, embeddings, reranking, evidence grounding, citation verification and evaluation.
+I’m **Adham Elsayed**, an AI Engineering student at **Mansoura University, Egypt**. I work on **generative AI, retrieval-augmented systems, computer vision, and the backend services that turn models into usable software**.
 
-**Computer Vision & Edge AI** — Detection and classification, OpenCV, ONNX inference and Raspberry Pi integration.
+My focus is on the parts that make AI systems trustworthy in practice: the quality of the data, the evidence behind an answer, how a model is evaluated, and how the result reaches a product.
 
-**Backend & Product** — FastAPI services, SQL data models, REST APIs, testing and frontend integration.
+**[Portfolio ↗](https://adhamelsayedai.github.io/)** &nbsp;·&nbsp; **[Résumé ↗](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf)** &nbsp;·&nbsp; **[LinkedIn ↗](https://www.linkedin.com/in/adham-elsayed-/)** &nbsp;·&nbsp; **[Email ↗](mailto:adhamelsayed515@gmail.com)**
 
-### Selected work
+---
 
-#### [MedFlow](https://adhamelsayedai.github.io/#projects)  ·  Clinical RAG
+### What I work on
 
-A team-built clinical learning prototype that retrieves evidence and checks whether an answer is supported before generating it. I worked on retrieval, evaluation and citation-grounding behavior.
+**01 &nbsp; Grounded AI & RAG**  
+Hybrid search, embeddings, reranking, evidence selection, citation grounding, and retrieval evaluation.
 
-`Python`  `Hybrid retrieval`  `RAG evaluation`  `FastAPI`
+**02 &nbsp; Computer Vision & Edge AI**  
+Detection and classification pipelines, OpenCV, ONNX inference, and deployment-oriented experiments.
 
-#### [AttendanceOS](https://github.com/AdhamElsayedAI/Smart-Attendance-System)  ·  Smart Attendance
+**03 &nbsp; Backend engineering**  
+Python and FastAPI services, data modeling, API integration, testing, and practical interfaces.
 
-A supervised university attendance prototype with exam rosters, face recognition, blink verification, a React interface and a FastAPI backend.
+### Selected engineering work
 
-`React`  `TypeScript`  `FastAPI`  `OpenCV`  `SQLite`
+**[MedFlow ↗](https://adhamelsayedai.github.io/#projects)** · Clinical retrieval & grounded answers  
+A clinical learning prototype focused on finding supporting evidence before generating an answer. My work centered on retrieval behavior, evaluation, and citation grounding. *Portfolio case study; repository source is private.*
 
-#### [Smart Basket](https://github.com/AdhamElsayedAI/Smart-Basket)  ·  Edge AI
+**[AttendanceOS ↗](https://github.com/AdhamElsayedAI/Smart-Attendance-System)** · Computer vision & university software  
+A local-first attendance prototype combining exam rosters, face recognition, blink verification, a React operator interface, and a FastAPI backend.
 
-A four-class grocery detection prototype using ONNX Runtime, with a Raspberry Pi camera path and optional Firebase synchronization of observed basket contents.
+**[Smart Basket ↗](https://github.com/AdhamElsayedAI/Smart-Basket)** · Edge AI  
+Grocery-item detection and basket tracking with YOLO, ONNX Runtime, Raspberry Pi integration, and optional Firebase synchronization.
 
-`YOLO`  `ONNX Runtime`  `Raspberry Pi`  `Firebase`
+**[Code AI Proctor ↗](https://github.com/AdhamElsayedAI/code-ai-proctor)** · Assessment technology  
+An educational assessment prototype connecting computer-vision risk signals, instructor review, and course-grounded AI explanations. Alerts are prompts for human review, not proof of misconduct.
 
-#### [Code AI Proctor](https://github.com/AdhamElsayedAI/code-ai-proctor)  ·  Assessment Platform
+### Tools I use
 
-A quiz and review platform connecting webcam-frame classification, instructor incident review and Gemini-assisted explanations based on course PDFs. Classification alerts are signals for human review, not proof of misconduct.
+**AI / Retrieval** &nbsp; Python · PyTorch · YOLO · OpenCV · ONNX Runtime · BM25 · Embeddings · RAG evaluation
 
-`PyTorch`  `YOLO`  `FastAPI`  `SQLAlchemy`  `Gemini`
+**Backend / Product** &nbsp; FastAPI · SQL · Docker · React · TypeScript · Git · Firebase
 
-### Tools & methods
+---
 
-**Languages / APIs:** Python, TypeScript, FastAPI, React, SQL
+I’m especially interested in **AI systems that can be measured, explained, and maintained** — not just demonstrated.
 
-**ML / Computer Vision:** PyTorch, Ultralytics YOLO, OpenCV, NumPy, ONNX Runtime
-
-**Retrieval / Infrastructure:** BM25, embeddings, ChromaDB, Docker, Git, Firebase
-
-<details>
-<summary><strong>Notes on evaluation</strong></summary>
-
-MedFlow's internal retrieval evaluation used 16 questions and reported **87.50% Hit@4** and **0.7031 MRR**. A separate seven-case grounding check reported valid citation IDs in all seven cases. Those figures describe limited engineering evaluations, not clinical accuracy or production readiness.
-
-</details>
-
-### A bit about me
-
-I'm studying **AI Engineering at Mansoura University** in Egypt. I'm interested in AI systems that can be tested properly, are clear about their limits and fit into products people can actually use.
-
-If you'd like to talk about a project, [send me an email](mailto:adhamelsayed515@gmail.com) or [connect on LinkedIn](https://www.linkedin.com/in/adham-elsayed-/).
+**Have an idea to collaborate on?** [Get in touch](mailto:adhamelsayed515@gmail.com).
