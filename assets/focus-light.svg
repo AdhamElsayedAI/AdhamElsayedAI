@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="725" height="42" viewBox="0 0 725 42" role="img" aria-labelledby="title description">
+<title id="title">Current engineering focus</title>
+<desc id="description">A discreet animated line cycles through RAG evaluation, computer vision inference, and AI product development.</desc>
+<circle cx="9" cy="20" r="3.7" fill="#B45239"><animate attributeName="opacity" values="1;.55;1" dur="4.6s" repeatCount="indefinite"/></circle>
+<text x="23" y="25" fill="#657184" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="13" letter-spacing=".3">Currently working on</text>
+<g font-family="ui-monospace,Menlo,Consolas,monospace" font-size="13.5" fill="#253246">
+  <text x="205" y="25">retrieval evaluation<animate attributeName="opacity" values="1;1;0;0;0" keyTimes="0;.28;.34;.98;1" dur="12s" repeatCount="indefinite"/></text>
+  <text x="205" y="25" opacity="0">computer vision inference<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.31;.36;.61;.67;1" dur="12s" repeatCount="indefinite"/></text>
+  <text x="205" y="25" opacity="0">AI product engineering<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.64;.69;.95;1" dur="12s" repeatCount="indefinite"/></text>
+</g>
+<path d="M0 36 H720" stroke="#CBD3DC" stroke-width=".7" opacity=".6"/>
+<path d="M0 36 H72" stroke="#B45239" stroke-width="1.5"><animate attributeName="stroke-opacity" values=".45;1;.45" dur="6s" repeatCount="indefinite"/></path>
+</svg>
