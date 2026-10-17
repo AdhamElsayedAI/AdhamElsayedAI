@@ -5,150 +5,183 @@
   <source media="(max-width: 640px) and (prefers-color-scheme: light)" srcset="./assets/profile-header-mobile-light.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-header-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/profile-header-light.svg" />
-  <img src="./assets/profile-header-dark.svg" alt="Adham Elsayed — AI Engineer: Generative AI, RAG, computer vision and edge deployment" width="100%" />
+  <img alt="Adham Elsayed — AI engineering: retrieval, evaluation, inference and delivery" src="./assets/profile-header-dark.svg" width="100%" />
 </picture>
 
 <br />
 
-<img src="./assets/adham-profile-framed.png" width="142" alt="Adham Elsayed — portrait" />
+<img src="./assets/adham-profile-framed.png" width="118" alt="Adham Elsayed" />
 
-### AI Engineer · Generative AI & RAG · Computer Vision & Edge AI
+### AI Engineer · Generative AI · RAG · Computer Vision
 
-**I build AI systems that can explain where their answers came from, show how they were evaluated, and run beyond a notebook.**
+*I turn AI research into systems that retrieve evidence, evaluate their behavior, and work beyond a notebook.*
 
-[**Portfolio ↗**](https://adhamelsayedai.github.io/) &nbsp;·&nbsp; [**Résumé ↗**](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf) &nbsp;·&nbsp; [**LinkedIn ↗**](https://www.linkedin.com/in/adham-elsayed-/) &nbsp;·&nbsp; [**Contact ↗**](mailto:adhamelsayed515@gmail.com)
+<p>
+  <a href="https://adhamelsayedai.github.io/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-View%20Website-C45843?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+  <a href="https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf"><img alt="Résumé" src="https://img.shields.io/badge/R%C3%A9sum%C3%A9-Download-253448?style=for-the-badge&logo=readthedocs&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/adham-elsayed-/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+</p>
 
 </div>
 
----
+## 01 / About
 
-## At a glance
+I'm an **AI Engineering student at Mansoura University**, focused on the intersection of **LLM applications, trustworthy retrieval, computer vision, and backend engineering**.
 
-I'm an **AI Engineering student at Mansoura University, Egypt**, building practical systems across **LLM/RAG engineering, computer vision, model evaluation, and deployment**. I work from data preparation and model behavior through APIs, interfaces, and the guardrails needed to use the system responsibly.
+I care about the parts of AI that matter after the demo: evaluating retrieval, validating evidence, designing safe fallback behavior, connecting models to APIs, and making the result usable in a real product.
 
-| What I work on | What that looks like in practice |
-| :--- | :--- |
-| **Generative AI / RAG** | Hybrid retrieval, embeddings, citations, evidence sufficiency, abstention and claim checks |
-| **Computer Vision / Edge** | YOLO training and evaluation, OpenCV pipelines, ONNX inference, Raspberry Pi integration |
-| **AI Systems Engineering** | FastAPI backends, reproducible experiments, data workflows, deployment and observability |
+<blockquote>
+<strong>Engineering principle</strong> — A confident answer is not the same as a grounded one. A working model is not the same as a validated system.
+</blockquote>
 
-## Featured engineering work
+## 02 / What I build
 
-### 01 — MedFlow · Evidence-Grounded Clinical RAG
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>Grounded AI</h3>
+      <p>Hybrid search, embeddings, reranking, evidence gates, citation-aware generation, and abstention.</p>
+      <sub>RAG · Evaluation · GenAI</sub>
+    </td>
+    <td width="33%" valign="top">
+      <h3>Vision &amp; Edge AI</h3>
+      <p>Object classification/detection, camera pipelines, inference optimization, and edge-device integration.</p>
+      <sub>PyTorch · YOLO · OpenCV · ONNX</sub>
+    </td>
+    <td width="33%" valign="top">
+      <h3>AI Product Engineering</h3>
+      <p>Python services, REST APIs, database-backed workflows, testing, and frontend integration.</p>
+      <sub>FastAPI · SQL · React · Git</sub>
+    </td>
+  </tr>
+</table>
 
-<sub>GENERATIVE AI &nbsp; / &nbsp; RETRIEVAL &nbsp; / &nbsp; SAFETY ENGINEERING</sub>
+## 03 / Selected work
 
-<a href="https://adhamelsayedai.github.io/#projects">
-  <img src="https://adhamelsayedai.github.io/images/medflow/medflow-evidence-hero.webp" alt="MedFlow UI concept visual — evidence-grounded thyroid clinical RAG with source citations" width="780" />
-</a>
+*The portfolio has the visuals. Here are the engineering stories and source links.*
 
-<sub>Portfolio UI concept based on the MedFlow workflow. Engineering results below are measured separately.</sub>
+<table>
+<tr>
+<td valign="top" width="50%">
 
-MedFlow is a **team-built thyroid-focused clinical AI prototype**. Rather than let a language model generate without constraints, the system retrieves medical evidence, checks sufficiency, resolves citations and validates claims before choosing to **answer, caution, abstain or redirect**.
+**[MedFlow — Clinical RAG](https://adhamelsayedai.github.io/#projects)**
 
-**Measured results** (internal engineering evaluations):
+Evidence-grounded medical AI prototype combining hybrid retrieval, source resolution, claim checks and bounded answer states.
 
-| Evaluation | Result | Scope |
-| :--- | ---: | :--- |
-| **Retrieval Hit@4** | **87.50%** | 16 ground-truth questions |
-| **Mean reciprocal rank** | **0.7031** | Same frozen retrieval benchmark |
-| **Citation ID validity** | **100%** | 7-case grounded generation evaluation |
-| **Fabricated citations** | **0** | Same 7 evaluation cases |
+**Focus:** Retrieval quality, citation validation, safety-aware generation.
 
-**My engineering focus:** evidence retrieval, retrieval evaluation, grounding, validation and safer response behavior. The project received **2nd place at AI Hackathon Mansoura 2026** as a team achievement.
+<sub>Python · Hybrid RAG · FastAPI · Evaluation</sub>
 
-> These results measure retrieval and citation behavior on limited test sets — **not clinical accuracy**. The primary MedFlow engineering repository remains private.
+</td>
+<td valign="top" width="50%">
 
-**[Explore the MedFlow case study →](https://adhamelsayedai.github.io/#projects)**
+**[AttendanceOS — Smart Attendance](https://github.com/AdhamElsayedAI/Smart-Attendance-System)**
+
+Exam-scoped university attendance with an operator workspace, face recognition, blink checks, and SQLite recording.
+
+**Focus:** Computer vision, React/FastAPI integration and supervised workflows.
+
+<sub>React · TypeScript · FastAPI · OpenCV · dlib</sub>
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**[Smart Basket — Edge AI](https://github.com/AdhamElsayedAI/Smart-Basket)**
+
+Camera-based grocery detection with ONNX inference, Raspberry Pi integration and optional real-time basket-state sync.
+
+**Focus:** Inference deployment and connecting predictions to application state.
+
+<sub>YOLO · ONNX Runtime · Raspberry Pi · Firebase</sub>
+
+</td>
+<td valign="top">
+
+**[Code AI Proctor — Exam Platform](https://github.com/AdhamElsayedAI/code-ai-proctor)**
+
+Online quiz workflows, webcam-frame classification alerts, teacher review and PDF-informed Gemini study assistance.
+
+**Focus:** AI services, assessment workflows and responsible human review.
+
+<sub>PyTorch · YOLO · FastAPI · SQLAlchemy · Gemini</sub>
+
+</td>
+</tr>
+</table>
 
 <details>
-<summary><b>See the RAG engineering workflow</b></summary>
+<summary><strong>Engineering evidence and evaluation scope</strong></summary>
 
-```mermaid
-flowchart LR
-    A[Clinical question] --> B[Risk checks]
-    B --> C[Dense + sparse retrieval]
-    C --> D[Evidence sufficiency]
-    D --> E[Grounded generation]
-    E --> F[Citation + claim validation]
-    F --> G{Answer / caution / abstain / redirect}
-```
+<br />
 
-The frozen 16-question retrieval benchmark and the separate 7-case grounded-generation evaluation measure different parts of the system; neither is a medical-device validation.
+For MedFlow, internal evaluation reported **87.50% Hit@4** and **0.7031 MRR** on **16 retrieval questions**; a separate **seven-case** grounded generation check reported valid citation IDs on all seven cases. These are **small engineering evaluations, not clinical-accuracy claims**.
+
+Other projects should not be judged by unverified production accuracy or latency numbers. Hardware-dependent recognition, product counting and exam-proctoring classification need task-specific validation in their real operating environments.
 
 </details>
 
----
-
-### 02 — Smart Basket · Edge AI Retail System
-
-<sub>COMPUTER VISION &nbsp; / &nbsp; EDGE INFERENCE &nbsp; / &nbsp; PRODUCT INTEGRATION</sub>
-
-<a href="https://github.com/AdhamElsayedAI/Smart-Basket">
-  <img src="https://adhamelsayedai.github.io/images/smart-basket/vision-checkout-hero.webp" alt="Smart Basket concept illustration showing a camera-equipped shopping basket, Raspberry Pi and mobile checkout app" width="780" />
-</a>
-
-A vision-assisted checkout prototype combining **four-class YOLO product detection**, **ONNX Runtime on Raspberry Pi 5** and basket-state synchronization through **Firebase to a Flutter mobile app**.
-
-**Project-reported object detection:** **96.89% mAP@0.5** · **84.79% mAP@0.5:0.95**.
-
-**Engineering path:** camera → OpenCV / YOLO → ONNX on Raspberry Pi → basket state → Firebase → Flutter.
-
-**[Explore source code →](https://github.com/AdhamElsayedAI/Smart-Basket)**
-
-<sub>Artwork above is a concept illustration; project metrics refer to model evaluation, not an end-to-end checkout accuracy guarantee.</sub>
-
----
-
-### 03 — Code AI Proctor · Auditable Exam Monitoring
-
-<sub>COMPUTER VISION &nbsp; / &nbsp; FASTAPI &nbsp; / &nbsp; MONITORING WORKFLOWS</sub>
-
-<a href="https://github.com/AdhamElsayedAI/code-ai-proctor">
-  <img src="https://adhamelsayedai.github.io/images/code-ai-proctor/monitoring-dashboard.webp" alt="Code AI Proctor concept illustration of the exam monitoring dashboard and alert workflow" width="780" />
-</a>
-
-A self-hosted proctoring prototype that connects **webcam-frame classification** to configurable alerts, captured incident evidence and teacher review — within organization, teacher and student portals.
-
-**System signals:** **2 classification classes** (cheating / normal) · **3 role-based portals** · auditable incident workflow. Built with **YOLO, PyTorch, FastAPI and optional SQL persistence**.
-
-**[Explore source code →](https://github.com/AdhamElsayedAI/code-ai-proctor)**
-
-<sub>Artwork above is a concept illustration. No unsupported model-accuracy or production-readiness figures are claimed.</sub>
-
----
-
-## Technical toolkit
-
-| Domain | Tools & approaches |
-| :--- | :--- |
-| **AI / ML** | Python · PyTorch · Ultralytics YOLO · Scikit-learn · model evaluation |
-| **RAG / LLMs** | BGE · BM25 · RRF · ChromaDB · grounded generation · citation validation |
-| **Computer vision / Edge** | OpenCV · ONNX Runtime · Raspberry Pi 5 |
-| **Backend / Integration** | FastAPI · REST APIs · SQL · Firebase · Flutter · Docker · Git |
-
-### How I work
-
-```text
-Understand the problem → Build a baseline → Evaluate failures
-        ↓
-Improve the model and evidence path → Add safety checks
-        ↓
-Expose an API → Integrate the product → Measure again
-```
-
-I care about **traceable decisions, honest metrics, practical deployment and useful product behavior** — not just a demo that looks convincing.
-
-## Background & contact
-
-**Education:** B.Sc. AI Engineering, Mansoura University *(in progress)*.  
-**Location:** Egypt.  
-**Interests:** Generative AI, retrieval systems, model evaluation, edge inference, AI-powered software products.
+## 04 / Technology toolkit
 
 <div align="center">
 
-**[Portfolio](https://adhamelsayedai.github.io/)** &nbsp;·&nbsp; **[GitHub](https://github.com/AdhamElsayedAI)** &nbsp;·&nbsp; **[LinkedIn](https://www.linkedin.com/in/adham-elsayed-/)** &nbsp;·&nbsp; **[Email](mailto:adhamelsayed515@gmail.com)**
+**Languages & Backend**
 
-<sub>Built around evidence, evaluation and engineering clarity. All project figures are tied to their stated test context.</sub>
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+<img alt="React" src="https://img.shields.io/badge/React-149ECA?style=flat-square&logo=react&logoColor=white" />
+<img alt="SQL" src="https://img.shields.io/badge/SQL-334155?style=flat-square" />
+
+**Machine Learning & Vision**
+
+<img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
+<img alt="YOLO" src="https://img.shields.io/badge/YOLO-111827?style=flat-square" />
+<img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" />
+<img alt="ONNX" src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white" />
+<img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" />
+
+**Retrieval, Infrastructure & Integration**
+
+<img alt="RAG" src="https://img.shields.io/badge/RAG%20%26%20Retrieval-8B5CF6?style=flat-square" />
+<img alt="BM25" src="https://img.shields.io/badge/BM25-475569?style=flat-square" />
+<img alt="ChromaDB" src="https://img.shields.io/badge/ChromaDB-C45843?style=flat-square" />
+<img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+<img alt="GitHub" src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" />
+<img alt="Firebase" src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=111827" />
+
+</div>
+
+## 05 / How I work
+
+```text
+PROBLEM + CONSTRAINTS
+        │
+        ▼
+DATA + EVIDENCE → BASELINE MODEL → EVALUATION
+                                      │
+                            ┌─────────┴─────────┐
+                            ▼                   ▼
+                      FAILURE ANALYSIS    GROUNDING CHECKS
+                            └─────────┬─────────┘
+                                      ▼
+                                 API + PRODUCT
+                                      │
+                                      ▼
+                                TEST → ITERATE
+```
+
+I prefer measurable improvements over arbitrary scores, source-grounded answers over polished guesses, and useful production paths over impressive demos without verification.
+
+---
+
+<div align="center">
+
+### Interested in building something meaningful?
+
+[**Explore my portfolio ↗**](https://adhamelsayedai.github.io/) &nbsp; · &nbsp; [**Read my résumé ↗**](https://adhamelsayedai.github.io/Adham_Elsayed_CV.pdf) &nbsp; · &nbsp; [**Get in touch ↗**](mailto:adhamelsayed515@gmail.com)
+
+<sub>Adham Elsayed · AI Engineer · Egypt</sub>
 
 </div>
