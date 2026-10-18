@@ -38,23 +38,26 @@
 .dot{animation:pulse 2.4s ease-in-out infinite}
 .ring{opacity:0;transform-box:fill-box;transform-origin:center;animation:ring 2.4s ease-out infinite}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
-</style>
+
+.in4{animation:rise .8s ease-out .24s both}
+@keyframes drift{to{transform:translate(12px,12px)}}
+.grid{animation-duration:24s}
+@media(prefers-reduced-motion:reduce){.r1{opacity:1!important}.in1,.in2,.in3,.in4{opacity:1!important}}</style>
 
 <defs>
  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#191B1F"/><stop offset="1" stop-color="#111316"/></linearGradient>
  <linearGradient id="sg" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#E66B55" stop-opacity="0"/><stop offset=".5" stop-color="#F28A60"/><stop offset="1" stop-color="#E66B55" stop-opacity="0"/></linearGradient>
  <radialGradient id="gl" cx=".5" cy=".5" r=".5"><stop stop-color="#E66B55" stop-opacity=".16"/><stop offset="1" stop-color="#E66B55" stop-opacity="0"/></radialGradient>
  <pattern id="gp" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#FFFFFF" stroke-opacity=".04"/></pattern>
- <clipPath id="cc"><rect x="1" y="1" width="598" height="438" rx="14"/></clipPath>
+ <clipPath id="cc"><rect x="0" y="0" width="600" height="440" rx="0"/></clipPath>
  <clipPath id="pc"><rect x="0" y="0" width="1" height="1" rx="9"/></clipPath>
-</defs>
-<rect x="1" y="1" width="598" height="438" rx="14" fill="url(#bg)" stroke="#36393F" stroke-width="2"/>
-<g clip-path="url(#cc)">
- <rect class="grid" x="-24" y="-24" width="648" height="488" fill="url(#gp)"/>
- <ellipse class="glow" cx="300" cy="330" rx="330" ry="170" fill="url(#gl)"/>
+<radialGradient id="heroAmbient" cx=".51" cy=".46" r=".70" fx=".51" fy=".46"><stop offset="0" stop-color="#141A23" stop-opacity=".92"/><stop offset=".54" stop-color="#11161E" stop-opacity=".80"/><stop offset=".86" stop-color="#11161E" stop-opacity=".29"/><stop offset="1" stop-color="#11161E" stop-opacity="0"/></radialGradient><radialGradient id="ambientRight" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#F0795A" stop-opacity=".20"/><stop offset=".5" stop-color="#F0795A" stop-opacity=".08"/><stop offset="1" stop-color="#F0795A" stop-opacity="0"/></radialGradient><linearGradient id="glassPanel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#465366" stop-opacity=".29"/><stop offset=".28" stop-color="#202833" stop-opacity=".68"/><stop offset="1" stop-color="#171C25" stop-opacity=".86"/></linearGradient><linearGradient id="glassHighlight" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".52"/><stop offset=".35" stop-color="#FFFFFF" stop-opacity=".10"/><stop offset=".75" stop-color="#F0795A" stop-opacity=".10"/><stop offset="1" stop-color="#F0795A" stop-opacity=".54"/></linearGradient><linearGradient id="glassReflection" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF" stop-opacity=".24"/><stop offset=".28" stop-color="#FFFFFF" stop-opacity=".055"/><stop offset=".48" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient><linearGradient id="nodeGlass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#485363" stop-opacity=".38"/><stop offset="1" stop-color="#171C25" stop-opacity=".60"/></linearGradient><linearGradient id="headerFade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".1" stop-color="#FFFFFF" stop-opacity=".14"/><stop offset=".75" stop-color="#FFFFFF" stop-opacity=".12"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/></linearGradient><linearGradient id="arcFade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F0795A" stop-opacity="0"/><stop offset=".45" stop-color="#F0795A" stop-opacity=".32"/><stop offset="1" stop-color="#F0795A" stop-opacity="0"/></linearGradient><radialGradient id="gridFade" cx=".54" cy=".52" r=".67"><stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset=".66" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset="1" stop-color="#000000" stop-opacity="0"/></radialGradient><mask id="gridMask" maskUnits="userSpaceOnUse" x="0" y="0" width="600" height="440"><rect x="0" y="0" width="600" height="440" fill="url(#gridFade)"/></mask><filter id="glassShadow" x="-.2" y="-.3" width="1.4" height="1.6" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation="11"/></filter></defs>
+<rect x="0" y="0" width="600" height="440" fill="url(#heroAmbient)"/><g aria-hidden="true"><ellipse cx="465" cy="316" rx="295" ry="190" fill="url(#ambientRight)"/><path d="M-80 230 C90 25 240 -12 475 73" stroke="url(#arcFade)" stroke-width="1.4" fill="none" opacity=".46"/></g><g clip-path="url(#cc)">
+ <rect class="grid" x="-24" y="-24" width="648" height="488" fill="url(#gp)" mask="url(#gridMask)" opacity=".42"/>
+ <ellipse class="glow" cx="300" cy="330" rx="330" ry="170" fill="url(#gl)" opacity=".33"/>
  <rect class="sw" x="0" y="52" width="260" height="2" fill="url(#sg)"/>
 </g>
-<path d="M18 53H582" stroke="#FFFFFF" stroke-opacity=".13"/>
+<path d="M18 53H582" stroke="url(#headerFade)"/>
 <rect x="24" y="16" width="30" height="23" rx="3" fill="#E66B55"/>
 <text x="39" y="32" text-anchor="middle" class="mono" font-size="12" font-weight="700" fill="#111316">AE</text>
 <text x="66" y="32" class="mono" font-size="12" letter-spacing="1.4" fill="#E1DED9">ADHAM / ENGINEERING</text>
@@ -71,16 +74,16 @@
 <g fill="#E66B55"><rect class="i i1" x="24" y="212" width="16" height="2"/><rect class="i i2" x="46" y="212" width="16" height="2"/><rect class="i i3" x="68" y="212" width="16" height="2"/></g>
 <g class="sans in3" font-size="16" fill="#ACAFB2"><text x="24" y="250">Building the data pipelines, model logic and APIs</text><text x="24" y="273">that make intelligent products dependable.</text></g>
 <g class="in4">
- <rect x="24" y="302" width="126" height="44" rx="5" fill="#292C31" stroke="#5A5D62"/>
+ <g aria-hidden="true"><rect x="19" y="296" width="562" height="117" rx="21" fill="#000000" opacity=".21" filter="url(#glassShadow)"/><rect x="18" y="294" width="564" height="121" rx="20" fill="url(#glassPanel)"/><rect x="18.5" y="294.5" width="563" height="120" rx="19.5" fill="none" stroke="url(#glassHighlight)" stroke-width="1.1" opacity=".45"/><path d="M39 297 H544" stroke="#FFFFFF" stroke-opacity=".22" fill="none" stroke-width="1"/></g><rect x="24" y="302" width="126" height="44" rx="9" fill="url(#nodeGlass)" stroke="#A8B5C5" stroke-opacity=".26"/>
 <rect class="hl h0" x="24" y="302" width="126" height="44" rx="5" fill="#E66B55" fill-opacity=".2" stroke="#E66B55"/>
 <text x="87.0" y="328.0" text-anchor="middle" class="mono" font-size="13" letter-spacing=".6" fill="#E1DED9">RETRIEVE</text>
-<rect x="166" y="302" width="126" height="44" rx="5" fill="#292C31" stroke="#5A5D62"/>
+<rect x="166" y="302" width="126" height="44" rx="9" fill="url(#nodeGlass)" stroke="#A8B5C5" stroke-opacity=".26"/>
 <rect class="hl h1" x="166" y="302" width="126" height="44" rx="5" fill="#E66B55" fill-opacity=".2" stroke="#E66B55"/>
 <text x="229.0" y="328.0" text-anchor="middle" class="mono" font-size="13" letter-spacing=".6" fill="#E1DED9">RERANK</text>
-<rect x="308" y="302" width="126" height="44" rx="5" fill="#292C31" stroke="#5A5D62"/>
+<rect x="308" y="302" width="126" height="44" rx="9" fill="url(#nodeGlass)" stroke="#A8B5C5" stroke-opacity=".26"/>
 <rect class="hl h2" x="308" y="302" width="126" height="44" rx="5" fill="#E66B55" fill-opacity=".2" stroke="#E66B55"/>
 <text x="371.0" y="328.0" text-anchor="middle" class="mono" font-size="13" letter-spacing=".6" fill="#E1DED9">VERIFY</text>
-<rect x="450" y="302" width="126" height="44" rx="5" fill="#292C31" stroke="#5A5D62"/>
+<rect x="450" y="302" width="126" height="44" rx="9" fill="url(#nodeGlass)" stroke="#A8B5C5" stroke-opacity=".26"/>
 <rect class="hl h3" x="450" y="302" width="126" height="44" rx="5" fill="#E66B55" fill-opacity=".2" stroke="#E66B55"/>
 <text x="513.0" y="328.0" text-anchor="middle" class="mono" font-size="13" letter-spacing=".6" fill="#F28A60">SERVE</text>
  <g stroke="#E66B55" stroke-opacity=".75" fill="none" stroke-width="1.5"><path d="M150 324H166M292 324H308M434 324H450"/></g>
